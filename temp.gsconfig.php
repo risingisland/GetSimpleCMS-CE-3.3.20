@@ -77,8 +77,8 @@ extraPlugins:"fontawesome5,youtube,codemirror",
 disableNativeSpellChecker : false,
 forcePasteAsPlainText : true,
 font_names : "Arial;Times New Roman;Verdana",
-contentsCss : "../theme/ckEditor/editorStyles.css",
-styleSET : "../theme/ckEditor/styleSet.js",
+contentsCss : "./theme/ckEditor/editorStyles.css",
+styleSET : "./theme/ckEditor/styleSet.js",
 ');*/
 
 # Set email from address
