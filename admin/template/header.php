@@ -53,6 +53,33 @@ if(get_filename_id()!='index') exec_action('admin-pre-header');
     <?php 
 	# Plugin hook to allow insertion of stuff into the header
 	if(!isAuthPage()) exec_action('header'); 
+	
+	function doVerCheck(){
+		return !isAuthPage() && !getDef('GSNOVERCHECK');
+	}
+
+    if( doVerCheck() ) { ?>
+	<script type="text/javascript">		
+		// check to see if core update is needed
+		jQuery(document).ready(function() { 
+			<?php 
+				$data = get_api_details();
+				if ($data) {
+					$apikey = json_decode($data);
+					
+					if(isset($apikey->status)) {
+						$verstatus = $apikey->status;
+			?>
+				var verstatus = <?php echo $verstatus; ?>;
+				/*if(verstatus != 1) {
+					<?php if(isBeta()){ ?> $('a.support').parent('li').append('<span class="info">i</span>');
+					<?php } else { ?> $('a.support').parent('li').append('<span class="warning">!</span>'); <?php } ?>
+					$('a.support').attr('href', 'health-check.php');
+				}*/
+			<?php  }} ?>
+		});
+	</script>
+	<?php } ?>
 
 	<script type="text/javascript">		
 		// init gs namespace and i18n
