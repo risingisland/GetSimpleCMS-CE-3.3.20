@@ -109,7 +109,7 @@ styleSET : "http://localhost/gs-new-ma/theme/ResponsiveCE/mystyles.js",
 define('GSSUPPRESSERRORS',true);
 
 # Disable check for Apache web server, default false
-# define('GSNOAPACHECHECK', true);
+define('GSNOAPACHECHECK', true);
 
 # Disable header version check
 # define('GSNOVERCHECK', true);
