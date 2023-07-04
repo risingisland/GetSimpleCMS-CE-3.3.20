@@ -8,7 +8,7 @@ What has changed in this version of the Community Edition?
 
 **Updates:**
 
-⭐ Massive Admin Theme (repsponsive admin)
+⭐ Massive Admin Theme included (repsponsive admin)
 
 ⭐ ResponsiveCE (front-end demo theme)
 
