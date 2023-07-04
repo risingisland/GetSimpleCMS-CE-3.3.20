@@ -108,25 +108,6 @@ styleSET : "./theme/ckEditor/styleSet.js",
 # Forces suppression of php errors when GSDEBUG is false, despite php ini settings
 define('GSSUPPRESSERRORS',true);
 
-# Disable check for Apache web server, default false
-define('GSNOAPACHECHECK', true);
-
-# Disable header version check
-# define('GSNOVERCHECK', true);
-
-# Enable alternate admin styles, current style constants are
-# GSSTYLE can be a comma delimied list of flags
-# note: stylesheets are cached, flush cache after changing
-#
-# style flags:
-# GSSTYLEWIDE = wide fluid
-# GSSTYLE_SBFIXED = fixed sidemenu
-# 
-# eg. 
-# define('GSSTYLE',GSSTYLE_SBFIXED);
-# define('GSSTYLE',GSSTYLEWIDE);
-# define('GSSTYLE',implode(',',array(GSSTYLEWIDE,GSSTYLE_SBFIXED)));
-
 # Disable Sitemap generation and menu items
 # define('GSNOSITEMAP',true);
 
