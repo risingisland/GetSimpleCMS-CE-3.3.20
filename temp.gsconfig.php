@@ -76,9 +76,9 @@ define('GSDONOTPING', 1);
 extraPlugins:"fontawesome5,youtube,codemirror",
 disableNativeSpellChecker : false,
 forcePasteAsPlainText : true,
-/*font_names : "Arial;Times New Roman;Verdana",*/
-contentsCss : "http://localhost/gs-new-ma/theme/ResponsiveCE/editor.css",
-styleSET : "http://localhost/gs-new-ma/theme/ResponsiveCE/mystyles.js",
+font_names : "Arial;Times New Roman;Verdana",
+contentsCss : "../theme/ckEditor/editorStyles.css",
+styleSET : "../theme/ckEditor/styleSet.js",
 ');*/
 
 # Set email from address
