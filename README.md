@@ -8,9 +8,9 @@ What has changed in this version of the Community Edition?
 
 **Updates:**
 
-⭐ Massive Admin Theme included (repsponsive admin)
+⭐ Massive Admin Theme included default (repsponsive admin)
 
-⭐ ResponsiveCE (front-end demo theme)
+⭐ ResponsiveCE default (front-end starter theme)
 
 ⭐ New ckEditor advanced config. example & plugins (Codemirror, YouTube & FontAwesome)
 
