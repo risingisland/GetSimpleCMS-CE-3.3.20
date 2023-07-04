@@ -133,7 +133,7 @@ define('GSNOAPACHECHECK', true);
 # Hide I18N text on View All Pages.
 # define('I18N_SINGLE_LANGUAGE', true);
 
-# Ignore user's browser language
+# Ignore user browser language
 # define('I18N_IGNORE_USER_LANGUAGE',true);
 
 # Enable auto meta descriptions from content excerpts when empty
