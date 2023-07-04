@@ -9,7 +9,9 @@ What has changed in this version of the Community Edition?
 **Updates:**
 
 ⭐ Massive Admin Theme (repsponsive admin)
+
 ⭐ ResponsiveCE (front-end demo theme)
+
 ⭐ New ckEditor advanced config. example & plugins (Codemirror, YouTube & FontAwesome)
 
 - Fix deprecated Text-encoding HTML-ENTITIES for php8.2.
