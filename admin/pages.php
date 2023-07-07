@@ -68,19 +68,42 @@ if ( isset($_GET['action']) && isset($_GET['id']) && $_GET['action'] == 'clone')
 
 getPagesXmlValues(true);
 
+// CE admin sort page 
 $count = 0;
 foreach ($pagesArray as $page) {
-	if ($page['parent'] != '') { 
-		$parentTitle = returnPageField($page['parent'], "title");
-		$sort = $parentTitle .' '. $page['title'];		
-		$sort = $parentTitle .' '. $page['title'];
+	
+	if (defined('GSSORTPAGELISTBY')) {
+			$sorttype = GSSORTPAGELISTBY;
 	} else {
-		$sort = $page['title'];
+		$sorttype = 'title';
 	}
+	
+	switch($sorttype) {
+		case title:
+		if ($page['parent'] != '') {
+			$parentTitle = returnPageField($page['parent'], "title");
+			$sort = $parentTitle .' '. $page['title'];		
+			$sort = $parentTitle .' '. $page['title'];
+		} else {
+			$sort = $page['title'];
+		}
+		break;
+		case menu:
+		if ($page['parent'] != '') {
+			$parentTitle = returnPageField($page['parent'], "menuOrder");
+			$sort = $parentTitle .' '. $page['menuOrder'];		
+			$sort = $parentTitle .' '. $page['menuOrder'];
+		} else {
+			$sort = $page['menuOrder'];
+		}
+		break;
+	}
+	
 	$page = array_merge($page, ['sort' => $sort]);
 	$pagesArray_tmp[$count] = $page;
 	$count++;
 }
+
 // $pagesArray = $pagesArray_tmp;
 $pagesSorted = subval_sort($pagesArray_tmp,'sort');
 $table = get_pages_menu('','',0);

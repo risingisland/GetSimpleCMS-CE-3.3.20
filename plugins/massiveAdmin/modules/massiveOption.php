@@ -56,6 +56,22 @@
 
 <script type="text/javascript" src="template/js/ckeditor/ckeditor.js"></script>
 
+<?php 
+ 
+ global $EDTOOL;
+ global $EDOPTIONS;
+
+if(isset($EDTOOL)) $EDTOOL = returnJsArray($EDTOOL);
+if(isset($toolbar)) $toolbar = returnJsArray($toolbar); // handle plugins that corrupt this
+
+else if(strpos(trim($EDTOOL),'[[')!==0 && strpos(trim($EDTOOL),'[')===0){ $EDTOOL = "[$EDTOOL]"; }
+
+if(isset($toolbar) && strpos(trim($toolbar),'[[')!==0 && strpos($toolbar,'[')===0){ $toolbar = "[$toolbar]"; }
+$toolbar = isset($EDTOOL) ? ",toolbar: ".trim($EDTOOL,",") : '';
+$options = isset($EDOPTIONS) ? ','.trim($EDOPTIONS,",") : '';
+
+?>
+
 <script>
 	const ckeditorReplace = document.querySelector(".ckeditors");
 	var editor = CKEDITOR.replace(ckeditorReplace, {
@@ -71,8 +87,9 @@
 		filebrowserBrowseUrl: 'filebrowser.php?type=all',
 		filebrowserImageBrowseUrl: 'filebrowser.php?type=images',
 		filebrowserWindowWidth: '730',
-		filebrowserWindowHeight: '500',
-		toolbar: 'advanced'
+		filebrowserWindowHeight: '500'
+		<?php echo $toolbar; ?>
+	 <?php echo $options; ?>	
 	});
 </script>
 

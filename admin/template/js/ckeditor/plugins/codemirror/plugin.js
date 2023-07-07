@@ -42,7 +42,7 @@
                     showTrailingSpace: true,
                     showUncommentButton: true,
                     styleActiveLine: true,
-                    theme: "default",
+                    theme: "rubyblue",
                     useBeautifyOnStart: false,
                     hintOptions: null,
                     extraKeys: {

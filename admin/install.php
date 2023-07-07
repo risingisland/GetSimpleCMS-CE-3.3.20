@@ -88,7 +88,7 @@ if (count($lang_array) == 1) {
 	sort($lang_array);
 	$count="0"; $sel = ''; 
 	$langs = '<label for="lang" >'.i18n_r('SELECT_LANGUAGE').':</label>';
-	$langs .= '<select name="lang" id="lang" class="text" onchange="window.location=\'install.php?lang=\' + this.value;">';
+	$langs .= '<select name="lang" id="lang" style="width:100%;padding:10px;border:solid 1px #ddd; background:#fff;margin-bottom:5px;" class="text" onchange="window.location=\'install.php?lang=\' + this.value;">';
 	
 	foreach ($lang_array as $larray) {
 		if ($LANG == $larray) { $sel="selected";}
@@ -140,10 +140,22 @@ get_template('header', $site_full_name.' &raquo; '. i18n_r('INSTALLATION') );
 		echo '<div class="error">'. $kill .'</div>';
 	}	
 ?>
+	
+	<style>
+		body{
+			background-image: url('https://picsum.photos/seed/picsum/1600/900?blur');
+			background-size: cover;
+			height:100vh;
+			width:100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
 
 	<div id="maincontent">
 	<div class="main" >
-	<h3><?php echo $site_full_name .' '. i18n_r('INSTALLATION'); ?></h3>
+	<h3><?php echo $site_full_name .' CE '. i18n_r('INSTALLATION'); ?></h3>
 
 			<table class="highlight healthcheck">
 			<?php
@@ -230,13 +242,26 @@ get_template('header', $site_full_name.' &raquo; '. i18n_r('INSTALLATION') );
 				<p><?php i18n('KILL_CANT_CONTINUE');?> <a href="./" ><?php i18n('REFRESH');?></a></p>
 			<?php } else {?>
 			<form action="setup.php" method="post" accept-charset="utf-8" >
-				<div class="leftsec">
+				<div class="leftsec" style="width:100%">
 					<p>			
 						<?php echo $langs; ?><a href="http://get-simple.info/docs/languages" target="_blank" ><?php i18n('DOWNLOAD_LANG');?></a>
 						<noscript><a href="install.php?lang=" id="refreshlanguage" ><?php i18n('REFRESH');?></a> &nbsp;|&nbsp;</noscript> 
 					</p>
 				</div>
+				
 				<div class="clear"></div>
+
+				<label for="theme">Admin Theme</label>
+
+				<select name="theme" style="width:100%;padding:10px;border:solid 1px #ddd; background:#fff;margin-bottom:5px;">
+
+					<?php foreach (glob(GSPLUGINPATH . 'massiveAdmin/theme/*.css') as $style) {
+						$pure = pathinfo($style)['filename'];
+						echo '<option value="' . $pure . '" ' . ($fileOptionCheck == $pure ? 'selected' : '') . '>' . $pure . '</option>';
+					}; ?>
+
+				</select>
+ 
 				<p><input class="submit" type="submit" name="continue" value="<?php i18n('CONTINUE_SETUP');?> &raquo;" /></p>
 			</form>
 			

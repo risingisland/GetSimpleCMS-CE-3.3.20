@@ -21,9 +21,6 @@ if (basename($_SERVER['PHP_SELF']) == 'gsconfig.php') {
 # Turn off auto-generation of SALT and use a custom value. Used for cookies & upload security.
 # define('GSUSECUSTOMSALT', 'your_new_salt_value_here');
 
-# Default thumbnail width of uploaded image
-define('GSIMAGEWIDTH', '480');
-
 # Change the administrative panel folder name
 # define('GSADMIN', 'admin');
 
@@ -45,41 +42,30 @@ define('GSDONOTPING', 1);
 # Enable Canonical Redirects?
 # define('GSCANONICAL', 1);
 
+# Sort admin page list by title or menu
+define('GSSORTPAGELISTBY','menu');
+
+# Default thumbnail width of uploaded image
+define('GSIMAGEWIDTH', '480');
+
 # Use Uploadify to upload files?
 # define('GSNOUPLOADIFY', 0); // 0 to reenable uploadify ( uploadify is outdated flash based and has known xss exploits! USE AT OWN RISK )
 
 # WYSIWYG editor height (default 500)
 # define('GSEDITORHEIGHT', '400');
 
-# WYSIWYG toolbars (advanced, basic or [custom config]) 
-# define('GSEDITORTOOL', 'advanced');
-/*define('GSEDITORTOOL', "
-[ 'Source', '-', 'Templates' ],
-[ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ],
-[ 'Find', 'Replace', '-', 'SelectAll', '-', 'Scayt', 'ShowBlocks'],
-[ 'Maximize' ],
-'/',
-[ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'CopyFormatting', 'RemoveFormat' ],
-[ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ],
-[ 'Table', 'HorizontalRule', 'SpecialChar' ],
-'/',
-[ 'Image', 'Youtube', '-', 'Link', 'Unlink', 'Anchor' ],
-[ 'Styles', 'Format', 'Font', 'FontSize' ],
-[ 'TextColor', 'BGColor', '-', 'fontawesome5', 'Smiley' ],
-");*/
-
 # WYSIWYG editor language (default en)
 # define('GSEDITORLANG', 'en');
 
+# WYSIWYG toolbars (advanced, basic, advanced, island, CEbar or [custom config])
+define('GSEDITORTOOL', "CEbar");
+
 # WYSIWYG Editor Options
-/*define('GSEDITOROPTIONS', '
-extraPlugins:"fontawesome5,youtube,codemirror",
+define('GSEDITOROPTIONS', '
+extraPlugins:"fontawesome5,youtube,codemirror,cmsgrid,colorbutton,oembed,simplebutton,spacingsliders",
 disableNativeSpellChecker : false,
 forcePasteAsPlainText : true,
-font_names : "Arial;Times New Roman;Verdana",
-contentsCss : "./theme/ckEditor/editorStyles.css",
-styleSET : "./theme/ckEditor/styleSet.js",
-');*/
+');
 
 # Set email from address
 # define('GSFROMEMAIL', 'noreply@get-simple.info');

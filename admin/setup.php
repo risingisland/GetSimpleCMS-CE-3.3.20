@@ -168,6 +168,18 @@ get_template('header', $site_full_name.' &raquo; '. i18n_r('INSTALLATION'));
 
 ?>
 	
+	<style>
+		body{
+			background-image: url('https://picsum.photos/seed/picsum/1600/900?blur');
+			background-size: cover;
+			height:100vh;
+			width:100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+
 		<h1><?php echo $site_full_name; ?></h1>
 	</div>
 </div>
@@ -212,3 +224,15 @@ get_template('header', $site_full_name.' &raquo; '. i18n_r('INSTALLATION'));
 <?php get_template('footer'); ?>
 
 <?php } ?>
+
+<!--  create default theme -->
+<?php 
+	if(isset($_POST['continue'])){
+		$folder =GSDATAOTHERPATH.'massiveTheme/';
+		if(!file_exists($folder)){
+			mkdir($folder,0755);
+		}
+
+		file_put_contents($folder.'option.txt',$_POST['theme']);
+	};
+;?>
