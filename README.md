@@ -8,11 +8,17 @@ What has changed in this version of the Community Edition?
 
 **Updates:**
 
-⭐ Massive Admin Theme included default (repsponsive admin)
+⭐ Massive Admin included by default (repsponsive admin).
 
-⭐ ResponsiveCE default (front-end starter theme)
+⭐ New Admin themes option.
 
-⭐ New ckEditor advanced config. example & plugins (Codemirror, YouTube & FontAwesome)
+⭐ ResponsiveCE default template (front-end starter theme).
+
+⭐ New ckEditor plugins (Codemirror, YouTube, FontAwesome, etc.).
+
+⭐ New Soport page options (view errorlog & phpInfo).
+
+⭐ New gsconfig option (view page tree by Title or Menu order).
 
 - Fix deprecated Text-encoding HTML-ENTITIES for php8.2.
 - Hotfixes: form action reflection, add phar to blacklist, .htaccess
