@@ -126,7 +126,7 @@ if(empty($APIKEY)){
 		$kill = i18n_r('CHMOD_ERROR');
 }
 
-get_template('header', $site_full_name.' &raquo; '. i18n_r('INSTALLATION') ); 
+get_template('header', $site_full_name.' CE &raquo; '. i18n_r('INSTALLATION') ); 
 
 ?>
 	
