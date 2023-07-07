@@ -905,7 +905,3 @@ body#resetpassword #maincontent .main {
 #footer{
 	text-shadow:none ;
 }
-
-.CodeMirror{
-	overflow: hidden;
-}
