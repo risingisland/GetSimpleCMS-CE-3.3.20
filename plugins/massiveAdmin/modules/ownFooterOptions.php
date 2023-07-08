@@ -76,16 +76,12 @@
 	</style>
 
 	<label for="ownheader"><?php echo i18n_r('massiveAdmin/OWNFOOTERHEADER'); ?></label>
-	<textarea name="ownheader" id="ownheader" style="width:100%;height:200px;margin-top:10px; display:block;">
-<?php echo $data->ownheader ?? ''; ?>
-	</textarea>
+	<textarea name="ownheader" id="ownheader" style="width:100%; height:200px; margin-top:10px; display:block;"><?php echo $data->ownheader ?? ''; ?></textarea>
 
 	<br>
 
 	<label for="ownfooter"><?php echo i18n_r('massiveAdmin/OWNFOOTERFOOTER'); ?></label>
-	<textarea name="ownfooter" id="ownfooter" style="width:100%;height:200px;margin-top:10px;display:block;">
-<?php echo $data->ownfooter ?? ''; ?>
-	</textarea>
+	<textarea name="ownfooter" id="ownfooter" style="width:100%; height:200px; margin-top:10px; display:block;"><?php echo $data->ownfooter ?? ''; ?></textarea>
 
 	<script>
 		function editor(id) {
