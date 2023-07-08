@@ -933,10 +933,18 @@ body#resetpassword #maincontent .main {
 }
 
 .CodeMirror {
-	resize: both;
+	resize: vertical;
 	overflow: hidden;
 }
 
 #footer{
 	text-shadow:none ;
 }
+
+.copybutton { display: inline-block; position: relative; vertical-align: middle; }
+.copybutton img { transition: transform 0.3s; width:22px; }
+.copybutton:hover img { transform: scale(1.2); }
+.copybutton:active img { transform: scale(0.8); }
+.shortcode{font-size:small; background-color:#f1f1f1; padding:3px 5px; border:1px solid #B2B2B2; margin-right:5px; border-radius: 5px;}
+.tpl{color:royalblue !important;}
+.cke{color:hotpink !important;}
