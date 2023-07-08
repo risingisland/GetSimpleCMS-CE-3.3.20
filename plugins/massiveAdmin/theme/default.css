@@ -899,7 +899,7 @@ body#resetpassword #maincontent .main {
 
 .CodeMirror {
 	resize: both;
-	overflow: auto;
+	overflow: hidden;
 }
 
 #footer{
