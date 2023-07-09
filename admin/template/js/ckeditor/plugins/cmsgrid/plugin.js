@@ -1,5 +1,5 @@
 ﻿CKEDITOR.plugins.add('cmsgrid', {
-    lang: 'en',
+    lang: [ 'en', 'es', 'pl', 'ru', 'de', 'bg', 'pt', 'pt-br', 'ja', 'hu', 'it', 'fr', 'tr', 'ar', 'nl', 'vi', 'zh', 'el', 'he', 'nb', 'nn', 'fi', 'et', 'sk', 'cs', 'ko', 'eu', 'uk'],
     icons: 'cmsgrid',
     hidpi: true,
     init: function(editor) {
@@ -14,7 +14,7 @@
         // Setup lang, css, js
         var lang = editor.lang.cmsgrid;
 		editor.addContentsCss(this.path + 'styles/cmsgrid.css');
-		editor.addContentsCss('/path/to/bootstrap/css/bootstrap.min.css');
+		//editor.addContentsCss('/path/to/bootstrap/css/bootstrap.min.css');
 		 
         // Dialog window
         editor.addCommand('cmsgridDialog', new CKEDITOR.dialogCommand('cmsgridDialog'));
