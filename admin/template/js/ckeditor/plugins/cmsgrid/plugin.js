@@ -1,5 +1,5 @@
 ﻿CKEDITOR.plugins.add('cmsgrid', {
-    lang: [ 'en', 'es', 'pl', 'ru', 'de', 'bg', 'pt', 'pt-br', 'ja', 'hu', 'it', 'fr', 'tr', 'ar', 'nl', 'vi', 'zh', 'el', 'he', 'nb', 'nn', 'fi', 'et', 'sk', 'cs', 'ko', 'eu', 'uk'],
+    lang: [ 'en', 'es', 'pl', 'ru', 'de', 'ja', 'it', 'fr', 'nl'],
     icons: 'cmsgrid',
     hidpi: true,
     init: function(editor) {
