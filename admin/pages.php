@@ -65,7 +65,6 @@ if ( isset($_GET['action']) && isset($_GET['id']) && $_GET['action'] == 'clone')
 	}
 }
 
-
 getPagesXmlValues(true);
 
 // CE admin sort page 
@@ -136,7 +135,6 @@ get_template('header', cl($SITENAME).' &raquo; '.i18n_r('PAGE_MANAGEMENT'));
 			
 		</div>
 	</div><!-- end maincontent -->
-	
 	
 	<div id="sidebar" >
 		<?php include('template/sidebar-pages.php'); ?>
