@@ -79,7 +79,7 @@ foreach ($pagesArray as $page) {
 	}
 	
 	switch($sorttype) {
-		case title:
+		case 'title':
 		if ($page['parent'] != '') {
 			$parentTitle = returnPageField($page['parent'], "title");
 			$sort = $parentTitle .' '. $page['title'];		
@@ -88,7 +88,7 @@ foreach ($pagesArray as $page) {
 			$sort = $page['title'];
 		}
 		break;
-		case menu:
+		case 'menu':
 		if ($page['parent'] != '') {
 			$parentTitle = returnPageField($page['parent'], "menuOrder");
 			$sort = $parentTitle .' '. $page['menuOrder'];		
