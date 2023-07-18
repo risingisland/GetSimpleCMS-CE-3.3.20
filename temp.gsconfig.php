@@ -64,7 +64,7 @@ define('GSEDITORTOOL', "CEbar");
 define('GSEDITOROPTIONS', '
 extraPlugins:"fontawesome5,youtube,codemirror,cmsgrid,colorbutton,oembed,simplebutton,spacingsliders",
 disableNativeSpellChecker : false,
-forcePasteAsPlainText : true,
+forcePasteAsPlainText : true
 ');
 
 # Set email from address
