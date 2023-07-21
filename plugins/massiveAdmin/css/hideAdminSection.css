@@ -77,11 +77,10 @@
 
 ul.user-list {
     width: 100%;
-    background: #fafafa;
+ 
     list-style-type: none;
     margin: 0 !important;
     padding: 0 !important;
-    border: solid 1px #ddd !important;
     margin-bottom: 20px !important;
     display: block;
 }
@@ -97,12 +96,17 @@ input {
     display: flex;
     width: 100% !important;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin:10px 0;
+    border:solid 1px #ddd;
+    background: #fafafa;
 }
 
-.user-list li:nth-child(2n) {
-    background: #ddd;
+.user-list label{
+    padding-top: 10px;
 }
+ 
 
 #hidecontent3 select {
     margin-top: 10px;

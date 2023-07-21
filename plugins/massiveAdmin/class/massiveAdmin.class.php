@@ -4,7 +4,8 @@ class MassiveAdminClass
 {
 
 	/* massive Options */
-	public function deleteFileList(){
+	public function deleteFileList()
+	{
 		$list = $_POST['delFileList'];
 		$ar = explode(",", $list);
 		foreach ($ar as $key => $value) {
@@ -13,7 +14,8 @@ class MassiveAdminClass
 		};
 	}
 
-	public function copyRename() {
+	public function copyRename()
+	{
 		$fileIsHere = i18n_r("massiveAdmin/INFOERROR");
 
 		$oldDirMassive = '../data/uploads/' . $_POST['rename-massive-hide'];
@@ -30,7 +32,8 @@ class MassiveAdminClass
 		}
 	}
 
-	public function saveRename() {
+	public function saveRename()
+	{
 		$oldDirMassive = '../data/uploads/' . $_POST['rename-massive-hide'];
 		$newDirMassive = '../data/uploads/' . $_POST['rename-massive'];
 
@@ -43,7 +46,8 @@ class MassiveAdminClass
 
 
 	/* massive uploader */
-	public function massiveUpload() {
+	public function massiveUpload()
+	{
 		echo '
 		<li style="margin: 0 0 3px 0;" class="masive-uploader">
 			<h3>' . i18n_r("massiveAdmin/UPLOADFILE") . '</h3>
@@ -71,12 +75,14 @@ class MassiveAdminClass
 	}
 
 	/* composite on page */
-	public function compositeOnPage() {
+	public function compositeOnPage()
+	{
 		echo '<li><a href="components.php" class="compmassive">' . i18n_r("massiveAdmin/EDITCOMPONENTS") . '</a> </li>';
 	}
 
 	/*massive option file */
-	public function massiveFile() {
+	public function massiveFile()
+	{
 		global $SITEURL;
 		global $massiveOptionFileContent;
 		$newmassiveOptionFile = json_decode($massiveOptionFileContent);
@@ -93,7 +99,8 @@ class MassiveAdminClass
 
 	/* massive header and icon */
 
-	public function massiveHead() {
+	public function massiveHead()
+	{
 		echo '<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.8/css/unicons.css">';
 		echo ' <meta name="viewport" content="width=device-width, initial-scale=1.0">';
 		$massiveOptionFile = GSDATAOTHERPATH . '/massiveadmin/massiveOption.json';
@@ -102,12 +109,14 @@ class MassiveAdminClass
 	}
 
 	/* codeMirror edit */
-	public function codeMirror() {
+	public function codeMirror()
+	{
 		echo '<script>if(document.querySelector(".CodeMirror")!==null){document.querySelector(".CodeMirror textarea").filter="invert(20%)"}</script>';
 	}
 
 	/* HELPINFO - DESK */
-	public function saveHelpInfo() {
+	public function saveHelpInfo()
+	{
 		$folder		= GSDATAOTHERPATH . '/massiveHelpDesk/';
 		$filename	  = $folder . 'helpdesk.json';
 		$chmod_mode	= 0755;
@@ -136,7 +145,8 @@ class MassiveAdminClass
 	}
 
 	/* massiveOption Save Option */
-	public function saveMassiveOption() {
+	public function saveMassiveOption()
+	{
 		// Set up the data
 		$grid = $_POST["grid"];
 		$gridfront = $_POST["gridfront"];
@@ -170,7 +180,8 @@ class MassiveAdminClass
 		/* hideAdminSection */
 	}
 
-	public function saveCreateUser() {
+	public function saveCreateUser()
+	{
 		$newposUser = $_POST['createuserhidden'];
 
 		$newposUserwithspace = str_replace(' ', '-', $newposUser);
@@ -189,7 +200,41 @@ class MassiveAdminClass
 		echo ("<meta http-equiv='refresh' content='0'>");
 	}
 
-	public function userList() {
+
+	public function saveChangedUser()
+	{
+
+		$file = file_get_contents(GSUSERSPATH . $_POST['nameuser'] . '.xml');
+		$data = new SimpleXMLElement(file_get_contents(GSUSERSPATH . $_POST['nameuser'] . '.xml'));
+		$oldPWD = $data->PWD[0];
+		$oldLANG = $data->LANG[0];
+		$oldEMAIL = $data->EMAIL[0];
+
+		$newEMAIL = $_POST['email'];
+		$newePWD = $_POST['password'];
+		$newLANG = $_POST['lang'];
+
+		if ($oldPWD !== $newEMAIL && $newEMAIL !== '') {
+			$file = str_replace($oldEMAIL, $newEMAIL, $file);
+		};
+
+		if ($oldLANG !==  $newLANG &&  $newLANG !== '') {
+			$file = str_replace($oldLANG, $newLANG, $file);
+		};
+
+
+		if ($newPWD !== '') {
+			$passhash = passhash($newePWD);
+			$file = str_replace($oldPWD, $passhash, $file);
+		};
+
+		file_put_contents(GSUSERSPATH . $_POST['nameuser'] . '.xml', $file);
+
+		echo ("<meta http-equiv='refresh' content='0'>");
+	}
+
+	public function userList()
+	{
 		$files = glob(GSUSERSPATH . "*.xml");
 
 		foreach ($files as &$value) {
@@ -199,10 +244,48 @@ class MassiveAdminClass
 
 			$username = new SimpleXMLElement(file_get_contents($value));
 
-			$usrfile = $username->USR[0];
+			$usrfile = pathinfo($value)['filename'];
+			$usrLangFile = $username->LANG[0];
 
 			echo '
-			<li> <span class="name">' . $usrfile . '</span><form action="" method="POST"><button type="submit" name="' . $newValue . '" class="delete-this" style="background:red;color:#fff;border:none;font-size:1.1rem;border-radius:3px"><i class="uil uil-trash-alt"></i></button></form> </li>';
+			<li> <span class="name">' . $usrfile . '</span><form action="" method="POST"><button type="submit" name="' . $newValue . '" class="delete-this" style="background:red;color:#fff;border:none;font-size:1.1rem;border-radius:3px"><i class="uil uil-trash-alt"></i></button></form>
+			
+<form method="POST" style="width:100%;border:solid 1px #ddd; padding:10px;margin-top:10px;">
+
+<input name="nameuser" type="hidden"  value="' . $usrfile . '">
+
+<label for="email">' . i18n_r("massiveAdmin/EMAIL") . '</label>
+<input type="email" name="email" value="' . $username->EMAIL[0] . '">
+
+<label for="password">' . i18n_r("massiveAdmin/PASSWORD") . '</label>
+<input type="password" name="password" placeholder="'. i18n_r("massiveAdmin/CHANGEPLACEHOLDER").'">
+
+<label for="password">' . i18n_r("massiveAdmin/LANG") . '</label>
+<select style="width:100%;background:#fff;border:solid 1px var(--main-color);padding:10px;" name="lang">
+';
+
+			foreach (glob(GSLANGPATH . '*.php') as $lang) {
+
+				$pureLang = pathinfo($lang)['filename'];
+
+				echo '<option value="' . $pureLang . '" ' . ($usrLangFile == $pureLang  ? 'selected' : '') . '>' . $pureLang  . '</option>';
+			};
+
+			echo '
+</select>
+
+<input type="submit" value="' . i18n_r("massiveAdmin/SAVEOPTION") . '" style="background:var(--main-color); width:200px;color:#fff;border-radius:5px;border:none" name="changeuser-' . $newValue . '">
+
+</form>
+			
+			
+			</li>';
+
+
+			if (isset($_POST['changeuser-' . $newValue])) {
+				$this->saveChangedUser();
+				echo ("<meta http-equiv='refresh' content='0'>");
+			};
 
 			if (isset($_POST[$newValue])) {
 				unlink($value);
@@ -211,7 +294,8 @@ class MassiveAdminClass
 		};
 	}
 
-	public function submitHideAdminSection() {
+	public function submitHideAdminSection()
+	{
 		$hidefiles = $_POST['hidefiles'];
 		$hidebackup = $_POST['hidebackup'];
 		$hidethemes = $_POST['hidethemes'];
@@ -244,7 +328,8 @@ class MassiveAdminClass
 	}
 
 	/* menu ext */
-	public function createLinkMenuExt() {
+	public function createLinkMenuExt()
+	{
 		$folder		= GSDATAOTHERPATH . 'massiveMenuExt/';
 		$filename	  = $folder . 'menuext.json';
 		$chmod_mode	= 0755;
@@ -268,7 +353,8 @@ class MassiveAdminClass
 	}
 
 	/* migrate & SSL */
-	public function migrateMassive() {
+	public function migrateMassive()
+	{
 		foreach (glob(GSDATAPATH . '{,*/,*/*/,*/*/*/}*.xml', GLOB_BRACE) as $file) {
 
 			$old = $_POST['oldMassiveUrl'];
@@ -279,7 +365,8 @@ class MassiveAdminClass
 		}
 	}
 
-	public function forceSSL() {
+	public function forceSSL()
+	{
 		$file = GSDATAOTHERPATH . 'MassiveForceSSL/';
 		$status = $file . 'status.txt';
 
@@ -314,7 +401,8 @@ class MassiveAdminClass
 	}
 
 	// showPassword option 
-	public function showPassword() {
+	public function showPassword()
+	{
 		$file = GSDATAOTHERPATH . 'MassiveShowPassword/';
 		$status = $file . 'status.txt';
 
@@ -327,7 +415,8 @@ class MassiveAdminClass
 	}
 
 	// remove forget password
-	public function removeForgetPassword() {
+	public function removeForgetPassword()
+	{
 		$file = GSDATAOTHERPATH . 'MassiveShowForgetPassword/';
 		$status = $file . 'status.txt';
 
@@ -340,7 +429,8 @@ class MassiveAdminClass
 	}
 
 	// show button password front
-	public function showIndexOption() {
+	public function showIndexOption()
+	{
 		$file = @file_get_contents(GSDATAOTHERPATH . 'MassiveShowPassword/status.txt');
 		$file2 = @file_get_contents(GSDATAOTHERPATH . 'MassiveShowForgetPassword/status.txt');
 
@@ -374,25 +464,26 @@ class MassiveAdminClass
 	}
 
 	//download plugin 
-	public function downloadPlugin() {
-			function delete_directory($dirname)
-			{
-				if (is_dir($dirname))
-					$dir_handle = opendir($dirname);
-				if (!$dir_handle)
-					return false;
-				while ($file = readdir($dir_handle)) {
-					if ($file != "." && $file != "..") {
-						if (!is_dir($dirname . "/" . $file))
-							unlink($dirname . "/" . $file);
-						else
-							delete_directory($dirname . '/' . $file);
-					}
+	public function downloadPlugin()
+	{
+		function delete_directory($dirname)
+		{
+			if (is_dir($dirname))
+				$dir_handle = opendir($dirname);
+			if (!$dir_handle)
+				return false;
+			while ($file = readdir($dir_handle)) {
+				if ($file != "." && $file != "..") {
+					if (!is_dir($dirname . "/" . $file))
+						unlink($dirname . "/" . $file);
+					else
+						delete_directory($dirname . '/' . $file);
 				}
-				closedir($dir_handle);
-				rmdir($dirname);
-				return true;
-			};
+			}
+			closedir($dir_handle);
+			rmdir($dirname);
+			return true;
+		};
 
 		$url = $_POST['url'];
 
@@ -408,8 +499,8 @@ class MassiveAdminClass
 			$zip->close();
 
 			foreach (glob(GSPLUGINPATH  . "tmp_plugin/*/*") as $filename) {
-				if(file_exists(str_replace(pathinfo($filename)['dirname'], GSPLUGINPATH,$filename))){
-					delete_directory(str_replace(pathinfo($filename)['dirname'], GSPLUGINPATH,$filename));
+				if (file_exists(str_replace(pathinfo($filename)['dirname'], GSPLUGINPATH, $filename))) {
+					delete_directory(str_replace(pathinfo($filename)['dirname'], GSPLUGINPATH, $filename));
 				}
 				rename($filename, str_replace(pathinfo($filename)['dirname'], GSPLUGINPATH, $filename));
 			};
@@ -425,11 +516,13 @@ class MassiveAdminClass
 
 	// remover
 
-	public function unistaller(){
+	public function unistaller()
+	{
 		$delPlug = $_GET['delPlugin'];
 
-		function delete_directory($dirname) {	  
-			if(file_exists($dirname)){
+		function delete_directory($dirname)
+		{
+			if (file_exists($dirname)) {
 				if (is_dir($dirname))
 					$dir_handle = opendir($dirname);
 				if (!$dir_handle)
@@ -448,29 +541,30 @@ class MassiveAdminClass
 			}
 		};
 
-		if(GSPLUGINPATH.$delPlug) {
-			delete_directory(GSPLUGINPATH.$delPlug);	
+		if (GSPLUGINPATH . $delPlug) {
+			delete_directory(GSPLUGINPATH . $delPlug);
 		};
 
-		if(file_exists(GSPLUGINPATH.$delPlug.'.php')) {
-			unlink(GSPLUGINPATH.$delPlug.'.php');
+		if (file_exists(GSPLUGINPATH . $delPlug . '.php')) {
+			unlink(GSPLUGINPATH . $delPlug . '.php');
 		}
-		
+
 		global $GSADMIN;
 		global $SITEURL;
-		$url =  $SITEURL.$GSADMIN.'/load.php?id=massiveAdmin&unistaller';
+		$url =  $SITEURL . $GSADMIN . '/load.php?id=massiveAdmin&unistaller';
 
 		echo '<div class="success" style="position:absolute; top:0; left:0; width: 100%; background: green; padding: 10px; box-sizing: border-box; color: #fff; margin-bottom: 20px;">Removed!</div>';
-		
+
 		echo ("<script>
 		setTimeout(()=>{
-			window.location.href = '".$url."';
+			window.location.href = '" . $url . "';
 		},1000);
 		</script>");
 	}
 
 	// snippet save
-	public function snippetSave() {
+	public function snippetSave()
+	{
 		$title = $_POST['snippetTitle'];
 		$content = $_POST['content'];
 		$fileFolder = GSDATAOTHERPATH . 'snippetMassive/';
@@ -497,7 +591,8 @@ class MassiveAdminClass
 	}
 
 	// codemirror components
-	public function ComponentsCodeMirror() {
+	public function ComponentsCodeMirror()
+	{
 		echo '
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js" integrity="sha512-8RnEqURPUc5aqFEN04aQEiPlSAdE0jlFS/9iGgUyNtwFnSKCXhmB6ZTNl7LnDtDWKabJIASzXrzD0K+LYexU9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css" integrity="sha512-uf06llspW44/LZpHzHT6qBOIVODjWtv4MxCricRxkzvopAlSWnTf6hpZTFxuuZcuNE9CBQhqE0Seu1CoRk84nQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -540,7 +635,27 @@ class MassiveAdminClass
 	}
 
 	// gsconfig edit
-	public function gsConfigEdit() {
+	public function gsConfigEdit()
+	{
 		file_put_contents(GSROOTPATH . 'gsconfig.php', $_POST['content']);
+	}
+
+
+	//create option for toper
+
+	public function mtoperSetting()
+	{
+		global $mtoperSettingPath;
+		$mtoperSettingPath = GSDATAOTHERPATH . 'massiveToperSettings/';
+
+		if (!file_exists($mtoperSettingPath)) {
+			mkdir($mtoperSettingPath, 0755);
+			file_put_contents($mtoperSettingPath . '.htaccess', 'Allow from All');
+		};
+
+		file_put_contents($mtoperSettingPath . 'turnon.txt', $_POST['turnon']);
+		file_put_contents($mtoperSettingPath . 'style.txt', $_POST['style']);
+
+		echo ("<meta http-equiv='refresh' content='0'>");
 	}
 };

@@ -1,10 +1,10 @@
 <?php
-	$folder		= GSDATAOTHERPATH . 'massiveMenuExt/';
-	$filename	  = $folder . 'menuext.json';
-	$chmod_mode	= 0755;
-	$folder_exists = file_exists($folder) || mkdir($folder, $chmod_mode);
-	$daterJson = @file_get_contents($filename);
-	$daterJsonNew = json_encode($daterJson); 
+$folder		= GSDATAOTHERPATH . 'massiveMenuExt/';
+$filename	  = $folder . 'menuext.json';
+$chmod_mode	= 0755;
+$folder_exists = file_exists($folder) || mkdir($folder, $chmod_mode);
+$daterJson = @file_get_contents($filename);
+$daterJsonNew = json_encode($daterJson);
 ?>
 
 <style>
@@ -18,12 +18,14 @@
 		padding: 15px;
 		margin-top: 10px;
 	}
+
 	.form-menuext input,
-		select {
+	select {
 		width: 100%;
 		padding: 5px;
 		margin-top: 10px;
 	}
+
 	.newlink-menu {
 		list-style-type: none;
 		margin: 0 !important;
@@ -31,15 +33,19 @@
 		border: solid 1px #ddd;
 		background: #fafafa;
 	}
+
 	.newlink-menu li {
 		padding: 15px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
+
 	.newlink-menu li:nth-child(2n) {
 		background: #ddd;
 	}
+
 	#unicons {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -47,11 +53,13 @@
 		height: 300px;
 		overflow-y: scroll;
 	}
+
 	#unicons input[type="checkbox"] {
 		margin: 0;
 		padding: 0;
 		all: revert;
 	}
+
 	#unicons .uil {
 		font-size: 1.2rem;
 	}
@@ -72,7 +80,9 @@
 			echo '
 			<li>
 				<a href="' . $query["url"] . '"><i class="' . $query["icon"] . '"></i> ' . $query["name"] . '</a> <form action="#" method="POST"><button name="' . $newnamenew . '" style="background:red;border:none;color:#fff;font-size:1.2rem"><i class="uil uil-trash"></i></button></form>
-			</li>
+		 
+			 
+				</li>
 			';
 			if (isset($_POST[$newnamenew])) {
 				$datee = file_get_contents($filename);
@@ -87,6 +97,8 @@
 </ul>
 
 <form action="#" method="POST" class="form-menuext">
+
+
 
 	<div>
 		<label for=""><?php echo i18n_r('massiveAdmin/LINKNAME'); ?></label>
@@ -112,7 +124,7 @@
 	</div>
 
 	<div class="buttons-save">
-	<input type="submit" style="width: 100%; padding: 10px; margin-top: 20px; background: #000; color: #fff; border: none; border-radius: 5px;" name="addnew" value="<?php echo i18n_r('massiveAdmin/ADDLINK'); ?>">
+		<input type="submit" style="width: 100%; padding: 10px; margin-top: 20px; background: #000; color: #fff; border: none; border-radius: 5px;" name="addnew" value="<?php echo i18n_r('massiveAdmin/ADDLINK'); ?>">
 	</div>
 
 </form>
@@ -1001,9 +1013,9 @@
 </script>
 
 <?php
-	if (isset($_POST['addnew'])) {
-		global $MA;
-		global $folder_exists;
-		$MA->createLinkMenuExt();
-	}; 
+if (isset($_POST['addnew'])) {
+	global $MA;
+	global $folder_exists;
+	$MA->createLinkMenuExt();
+};
 ?>
