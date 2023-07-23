@@ -104,27 +104,27 @@ $i18n = [
 	'DOWNLOAD' 						=> 'Herunterladen',
 
 	//login options
-	'LOGINOPTIONS' 					=> 'Login Options',
-	'TURNONSHOWPASSWORDTITLE' 		=> '"Show password" button',
-	'SHOWPASSWORDQUESTION' 			=> 'Enable the "Show Password" button when logging in?',
-	'REMOVEFORGETPASSWORDTITLE'		=> 'Remove "Forgot Password?"',
-	'SAVESETTINGS' 					=> 'Save Settings',
+	'LOGINOPTIONS' 					=> 'Anmeldeoptionen',
+	'TURNONSHOWPASSWORDTITLE' 		=> 'Schaltfläche „Passwort anzeigen“',
+	'SHOWPASSWORDQUESTION' 			=> 'Schaltfläche „Passwort anzeigen“ beim Anmelden aktivieren?',
+	'REMOVEFORGETPASSWORDTITLE'		=> '„Passwort vergessen?“ entfernen',
+	'SAVESETTINGS' 					=> 'Einstellungen speichern',
 
 	//GSCONFIG
-	'GSCONFIGTITLE' 				=> 'Edit GSCONFIG settings',
-	'GSCONFIGSAVE' 					=> 'Save the GSCONFIG settings',
+	'GSCONFIGTITLE' 				=> 'GSCONFIG-Einstellungen bearbeiten',
+	'GSCONFIGSAVE' 					=> 'GSCONFIG-Einstellungen speichern',
 
-	'UNISTALLER' 					=> 'Uninstall plugins',
-	'UNISTALLQUESTION'				=> 'You want to uninstall',
+	'UNISTALLER' 					=> 'Plugins deinstallieren',
+	'UNISTALLQUESTION'				=> 'Sie möchten deinstallieren',
 
 	//mToper
-	"TAB_PAGES"						=> 'Pages',
-	"TAB_FILES"						=> 'Files',
+	"TAB_PAGES"						=> 'Seiten',
+	"TAB_FILES"						=> 'Dateien',
 	"TAB_THEME"						=> 'Theme',
 	"TAB_BACKUPS"					=> 'Backups',
 	"PLUGINS_NAV" 					=> 'Plugins',
-	"TAB_SETTINGS"					=> 'Settings',
-	"TAB_LOGOUT"					=> 'Logout',
+	"TAB_SETTINGS"					=> 'Einstellungen',
+	"TAB_LOGOUT"					=> 'Abmelden',
 
 
 	//frontend settings
@@ -134,17 +134,17 @@ $i18n = [
 
 	//admin settings
 
-	'FRONTENDTITLE' => 'Front End Settings',
-	'TURNONMTOPER' => 'Turn on frontend bar?',
-	'STYLEINFO' => 'Style for FrontEnd sidebar',
+	'FRONTENDTITLE' => 'Frontend-Einstellungen',
+	'TURNONMTOPER' => 'Frontend-Leiste einschalten?',
+	'STYLEINFO' => 'Stil für FrontEnd-Seitenleiste',
 	'ADMINTHEMESELECTOR' => 'Admin Theme Selector',
 
 	//manage users
 
 	'EMAIL' => 'e-mail:',
-	'PASSWORD' => 'Password:',
-	'LANG' => 'Language:',
-	'CHANGEPLACEHOLDER' => 'change only if you want to change'
+	'PASSWORD' => 'Passwort:',
+	'LANG' => 'Sprache:',
+	'CHANGEPLACEHOLDER' => 'nur ändern, wenn Sie ändern möchten'
 
 
 ];;
