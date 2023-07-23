@@ -1,6 +1,6 @@
 ﻿"use strict"
 
-CKEDITOR.plugins.setLang( 'cmsgrid', 'en', {
+CKEDITOR.plugins.setLang( 'cmsgrid', 'pt', {
 	btnAddGrid: 'Add a Custom Layout',
 	btnChangeGrid: 'Change a Custom Layout',
 	btnAddRow: 'Add Row',

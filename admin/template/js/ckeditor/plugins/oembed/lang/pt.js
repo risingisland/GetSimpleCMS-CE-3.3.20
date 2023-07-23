@@ -1,5 +1,5 @@
 CKEDITOR.plugins.setLang('oembed',
-    'en',
+    'pt',
     {
         title: "Embed Media Content (Photo, Video, Audio or Rich Content)",
         button: "Embed Media from External Sites",

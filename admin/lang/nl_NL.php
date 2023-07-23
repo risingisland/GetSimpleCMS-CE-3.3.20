@@ -479,7 +479,7 @@ $i18n = [
     'FILE_NAME' => "Bestandsnaam",
     'FILE_SIZE' => "Grootte",
     'ARCHIVE_DATE' => "Archiveerdatum",
-    'CKEDITOR_LANG' => "en",
+    'CKEDITOR_LANG' => "nl",
 
 	# new to 3.1 
     'XML_INVALID' => "Ongeldige XML",
