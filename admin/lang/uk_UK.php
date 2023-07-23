@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Український переклад GetSimple CMS
+ * Ukranian Language File
  *
  * Date:		22 July 2023
- * Revision:	July 2023
- * Version:		GetSimple 3.3.19-CE
+ * Revision:	2023.07.23
+ * Version:		GetSimple 3.3.19 CE
  * Author:      VeNickov
- * Traductors: 	GS Community
+ * Traductors: 	GS Community 
  *
  * @package GetSimple
  * @subpackage Language

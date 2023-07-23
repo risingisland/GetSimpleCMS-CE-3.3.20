@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Русский перевод GetSimple CMS
+ * Russian GetSimple CMS
  *
- * Date:		22 July 2023
- * Revision:		July 2023
- * Version:		GetSimple 3.3.19-CE
- * Traductors: 		GS Community 
+ * Date: 		2023.07.22
+ * Revision:	2023.07.23
+ * Version:		GetSimple 3.3.19 CE
+ * Traductors: 	GS Community 
  *
  * @package GetSimple
  * @subpackage Language
