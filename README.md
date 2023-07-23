@@ -6,9 +6,9 @@ What has changed in this version of the Community Edition?
 🚀 **_Added support for php7.4-8.2_**
 
 
-**Updates:**
+**New in this Update:**
 
-⭐ Massive Admin included by default (repsponsive admin).
+⭐ Massive Admin included by default (responsive admin + user manager + much much more...).
 
 ⭐ New Admin themes option.
 
@@ -16,9 +16,15 @@ What has changed in this version of the Community Edition?
 
 ⭐ New ckEditor plugins (Codemirror, YouTube, FontAwesome, etc.).
 
-⭐ New Soport page options (view errorlog & phpInfo).
+⭐ New Soport Page options (view errorlog & phpInfo).
 
 ⭐ New gsconfig option (view page tree by Title or Menu order).
+
+⭐ New Copy Component code button.
+
+⭐ Other minor fixes and cleanup.
+
+**Previous Updates:**
 
 - Fix deprecated Text-encoding HTML-ENTITIES for php8.2.
 - Hotfixes: form action reflection, add phar to blacklist, .htaccess
