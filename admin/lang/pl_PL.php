@@ -17,7 +17,7 @@ $i18n = [
 /* 
  * For: install.php
 */
-"PHPVER_ERROR"			=>	"<strong>Kontynuacja niemożliwa:</strong> wymagane jest PHP 5.2.0, lub nowsze, na serwerze zainstalowane jest",
+"PHPVER_ERROR"			=>	"<strong>Kontynuacja niemożliwa:</strong> wymagane jest PHP 7.4, lub nowsze, na serwerze zainstalowane jest",
 "SIMPLEXML_ERROR"		=>	"<strong>Kontynuacja niemożliwa:</strong> <em>SimpleXML</em> nie jest zainstalowany",
 "CURL_WARNING"			=>	"<strong>Ostrzeżenie:</strong> <em>cURL</em> nie jest zainstalowany",
 "TZ_WARNING"			=>	"<strong>Ostrzeżenie:</strong> <em>date_default_timezone_set</em> nie został ustawiony",
