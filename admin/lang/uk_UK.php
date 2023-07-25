@@ -48,7 +48,7 @@ $i18n = [
     'CONTINUE_SETUP' => "Продовжити установку",
     'DOWNLOAD_LANG' => "Завантажити додаткові мовні файли",
     'SITE_UPDATED' => "Ваш сайт був оновлений",
-    "SERVICE_UNAVAILABLE"	=>	"Ця сторінка тимчасово недоступна",
+    'SERVICE_UNAVAILABLE' => "Ця сторінка тимчасово недоступна",
 
     /* 
      * For: pages.php
@@ -491,7 +491,7 @@ $i18n = [
     'COPY' => "Копіювати",
     'CLONE_ERROR' => "Проблема зі спробою клонувати <b>%s</b>",
     'AUTOSAVE_NOTIFY' => "Сторінка автозбереження на",
-    'MENU_MANAGER' => "<em>М</em>еню менеджер",
+    'MENU_MANAGER' => "Менеджер меню",
     'GET_PLUGINS_LINK' => "Вибрати плагіни",
     'SITEMAP_REFRESHED' => "Карта сайту оновлена",
     'LOG_FILE_EMPTY' => "Цей файл журналу порожній",
