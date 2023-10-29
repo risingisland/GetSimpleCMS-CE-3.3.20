@@ -26,17 +26,17 @@
 .masive-uploader h3::before {content: url('https://api.iconify.design/fa/cloud-upload.svg?color=%23ffffff'); width: 25px; height: 25px; border-radius: 0px; cursor: pointer; transition: all 250ms ease; display: flex; align-items: center; justify-content: center; float: left; margin-right: 10px;}
 #upload #sidebar > div h3::before {content: url('https://api.iconify.design/fa/cloud-upload.svg?color=%23ffffff'); width: 25px; height: 25px; border-radius: 0px; cursor: pointer; transition: all 250ms ease; display: flex; align-items: center; justify-content: center; float: left; margin-right: 10px;}
 #sidebar > div:nth-child(2){background: #339AF0 !important;}
-#sidebar > div:nth-child(2) > form:nth-child(2) > input:nth-child(4){background: #0E80CB !important; border: #414141 solid 1px !important;}
+#sidebar > div:nth-child(2) > form:nth-child(2) > input:nth-child(4){background: var(--main-color) !important; border: #414141 solid 1px !important;}
 
 input[type="submit"] {background: #8CC63F !important;}
 input.cleanthumb {background: #F00 !important;}
 input.mb_edit.mb_edit_delete {background: #F00 !important;}
 
-#metadata_window input, #metadata_window select, #metadata_window textarea {padding:7px;font-size:1em;border-radius:5px;}
-#metadata_window #menu-items {height: 65px;background: #339af0;border-radius:5px;}
+#metadata_window input, #metadata_window select, #metadata_window textarea {padding:7px; font-size:1em; border-radius:5px;}
+#metadata_window #menu-items {height: 65px; background: #339af0; border-radius:5px;}
 #metadata_window textarea {height: 85px;}
-#edit_window input#post-title {padding: 7px;font-weight: 590;color: #444;}
+#edit_window input#post-title {padding: 7px; font-weight: 590;color: #444;}
 
-form input.text, form select.text {padding: 7px;font-size: 1em;border-radius: 5px;}
+form input.text, form select.text {padding: 7px; font-size: 1em; border-radius: 5px;}
 
 #gsdebug {border: 1px solid #C00;}

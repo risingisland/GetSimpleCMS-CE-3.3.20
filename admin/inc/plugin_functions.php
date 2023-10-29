@@ -29,8 +29,8 @@ $GS_asset_objects['jquery']    = 'jQuery';
 $GS_asset_objects['jquery-ui'] = 'jQuery.ui'; 
 
 // jquery
-$jquery_ver    = '1.7.1';
-$jquery_ui_ver = '1.8.17';
+$jquery_ver    = '3.7.1';
+$jquery_ui_ver = '1.13.2';
 
 $GS_script_assets['jquery']['cdn']['url']      = '//ajax.googleapis.com/ajax/libs/jquery/'.$jquery_ver.'/jquery.min.js';
 $GS_script_assets['jquery']['cdn']['ver']      = $jquery_ver;
@@ -47,10 +47,10 @@ $GS_script_assets['jquery-ui']['local']['ver'] = $jquery_ui_ver;
 
 // misc
 $GS_script_assets['fancybox']['local']['url']  = $ASSETURL.$GSADMIN.'/template/js/fancybox/jquery.fancybox.pack.js';
-$GS_script_assets['fancybox']['local']['ver']  = '2.0.4';
+$GS_script_assets['fancybox']['local']['ver']  = '3.5.7';
 
 $GS_style_assets['fancybox']['local']['url']   =  $ASSETURL.$GSADMIN.'/template/js/fancybox/jquery.fancybox.css';
-$GS_style_assets['fancybox']['local']['ver']   = '2.0.4';
+$GS_style_assets['fancybox']['local']['ver']   = '3.5.7';
 
 // scrolltofixed
 $GS_script_assets['scrolltofixed']['local']['url']   =  $ASSETURL.$GSADMIN.'/template/js/jquery-scrolltofixed.js';
