@@ -8,11 +8,18 @@ What has changed in this version of the Community Edition?
 
 **Whats New in this Update:**
 
+⭐ Script updates:
+- fontawesome
+- fancybox
+- jquery
+- jquery-ui
+- scrolltofixed
+
+**Recent Updates:**
+
 🌐 11 default languages included (de, es, en, fr, it, ja, nl, pl, pt, ru, uk)
 
 ⭐ New gsconfig option (set login page language)
-
-**Recent Updates:**
 
 ⭐ Massive Admin included by default (responsive admin + user manager + much much more...).
 
