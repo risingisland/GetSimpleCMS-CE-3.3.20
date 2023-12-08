@@ -126,6 +126,9 @@ $i18n = [
 	"TAB_SETTINGS" 					=> 'Configurações',
 	"TAB_LOGOUT" 					=> 'Sair',
 
+	//makeFileInTheme
+	"CREATENEWFILE"					=> 'Criar novo arquivo',
+	"FILECREATED"					=> 'Arquivo criado!',
 
 	//frontend settings
 
@@ -147,4 +150,4 @@ $i18n = [
 	'CHANGEPLACEHOLDER' 			=> 'alterar apenas se você quiser alterar'
 
 
-];;
+];

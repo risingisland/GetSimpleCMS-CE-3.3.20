@@ -6,10 +6,10 @@ $i18n = [
 	'CONTENT_MAINTENANCE_MODE' 		=> 'メンテナンス モードの内容:',
 	'TURNONBOOTSTRAPGRID' 			=> 'Bootstrap-Grid 4.0 をオンにしますか?',
 	'TURNONBOOTSTRAPGRIDONTHEME' 	=> 'Bootstrap-Grid CSS をフロントエンド テーマに追加しますか?',
-	'YES' 							=> 'はい',
-	'NO' 							=> 'いいえ',
+	'YES' 							=> 'はい'、
+	'NO' 							=> 'いいえ'、
 	'SAVEOPTION' 					=> '変更を保存',
-	'SUPPORT' 						=> 'PayPal 経由で私の仕事をサポートしたい場合:) ありがとう! ',
+	'SUPPORT' 						=> 'PayPal 経由で私の仕事をサポートしたい場合:) ありがとう! '、
 	'UPLOADFILE' 					=> 'ファイルをアップロード',
 	'ANOTHERPAGE' 					=> '<strong>変更が保存されました!</strong> 別のページに移動します:)',
 	'EDITCOMPONENTS' 				=> 'コンポーネントの編集',
@@ -32,20 +32,19 @@ $i18n = [
 	'EMAILCREATE' 					=> '新しいユーザーの電子メール:',
 	'LANGCREATE' 					=> 'ユーザー言語:',
 
-
 	//options hidden section
 	'HIDEMENUTITLE' 				=> 'ユーザーマネージャーとセクション',
-	'SHOW' 							=> '表示',
-	'HIDE' 							=> '隠す',
+	'SHOW' 							=> '表示'、
+	'HIDE' 							=> '隠す'、
 	'HIDSECTIONTITLE' 				=> 'どのセクションを非表示にしますか?',
-	'HIDEPAGES' 					=> '「<strong><i class="uil uil-desktop"></i> ページ</strong>」セクションを非表示にしますか?',
-	'HIDEFILES' 					=> '「<strong><i class="uil uil-file"></i> ファイル</strong>」セクションを非表示にしますか?',
-	'HIDETHEMES' 					=> '「<strong><i class="uil uil-paint-tool"></i> テーマ</strong>」セクションを非表示にしますか?',
-	'HIDEBACKUP' 					=> '「<strong><i class="uil uil-save"></i> バックアップ</strong>」セクションを非表示にしますか?',
-	'HIDEPLUGIN' 					=> '「<strong><i class="uil uil-plug"></i> プラグイン</strong>」セクションを非表示にしますか?',
-	'HIDESUPPORT' 					=> '「<strong><i class="uil uil-life-ring"></i> サポート</strong>」セクションを非表示にしますか?',
-	'HIDESETTINGS' 					=> '「<strong><i class="uil uil-setting"></i> MassiveAdmin 設定</strong>」セクションを非表示にしますか?',
-	'HIDEI18NGALLERY' 				=> '「<strong><i class="uil uil-images"></i> i18n ギャラリー</strong>」セクションを非表示にしますか? (存在する場合)',
+	'HIDEPAGES' 					=> '<strong><i class="uil uil-desktop"></i> ページ</strong>セクションを非表示にしますか?',
+	'HIDEFILES' 					=> '<strong><i class="uil uil-file"></i> ファイル</strong>セクションを非表示にしますか?',
+	'HIDETHEMES' 					=> '<strong><i class="uil uil-paint-tool"></i> テーマ</strong>セクションを非表示にしますか?',
+	'HIDEBACKUP' 					=> '<strong><i class="uil uil-save"></i> バックアップ</strong>セクションを非表示にしますか?',
+	'HIDEPLUGIN' 					=> '<strong><i class="uil uil-plug"></i> プラグイン</strong>セクションを非表示にしますか?',
+	'HIDESUPPORT' 					=> '<strong><i class="uil uil-life-ring"></i> サポート</strong>セクションを非表示にしますか?',
+	'HIDESETTINGS' 					=> '<strong><i class="uil uil-setting"></i> MassiveAdmin 設定</strong>セクションを非表示にしますか?',
+	'HIDEI18NGALLERY' 				=> '<strong><i class="uil uil-images"></i> i18n ギャラリー</strong>セクションを非表示にしますか? (存在する場合)'、
 	'HIDEUSERS' 					=> '次のユーザーのセクションを非表示:',
 
 	//user manager
@@ -54,16 +53,16 @@ $i18n = [
 	//user help settings
 	'USERHELPTITLE' 				=> 'ユーザーヘルプ設定',
 	'TURNON' 						=> 'オンにしますか?',
-	'HELP' 							=> 'ヘルプ',
+	'HELP' 							=> 'ヘルプ'、
 	'USERHELP' 						=> 'ユーザーヘルプ',
 
 	//menu external
 	'MENUEXTERNAL' 					=> 'カスタム メニュー リンク マネージャー',
-	'LINKNAME' 						=> 'リンク名e:',
+	'LINKNAME' 						=> 'リンク名:',
 	'LINKURL' 						=> 'リンク URL:',
 	'LINKICON' 						=> 'リンクアイコン',
 	'NEWWINDOW' 					=> 'リンクを新しいウィンドウで開きますか?',
-	'MOREICONS' 					=> '(ここで他のアイコンを見つけます。):',
+	'MOREICONS' 					=> '(その他のアイコンはここで見つけます。):',
 	'ADDLINK' 						=> '新しいリンクを追加',
 
 	//own footer option
@@ -82,7 +81,7 @@ $i18n = [
 	'CHANGENAME' 					=> 'ニックネームを管理者のニックネーム以外の名前に変更します',
 
 	//snippet
-	'SNIPPET' 						=> 'スニペット',
+	'SNIPPET' 						=> 'スニペット'、
 	'ADDSNIPPET' 					=> 'スニペットを追加',
 	'EDITSNIPPET' 					=> 'スニペットの編集',
 	'TITLESNIPPET' 					=> 'タイトル (スペースなし)',
@@ -102,7 +101,7 @@ $i18n = [
 	'PLUGINDOWNLOADER' 				=> 'CE プラグインをダウンロード',
 	'DOWNLOADERBASED' 				=> 'Get Simple CMS CE プラグイン リポジトリに基づいています。',
 	'SEARCHPLUGIN' 					=> 'プラグインを検索...',
-	'DOWNLOAD' 						=> 'ダウンロード',
+	'DOWNLOAD' 						=> 'ダウンロード'、
 
 	//login options
 	'LOGINOPTIONS' 					=> 'ログイン オプション',
@@ -125,9 +124,12 @@ $i18n = [
 	"TAB_BACKUPS" 					=> 'バックアップ',
 	"PLUGINS_NAV" 					=> 'プラグイン',
 	"TAB_SETTINGS" 					=> '設定',
-	"TAB_LOGOUT"					=> 'ログアウト',
+	"TAB_LOGOUT" 					=> 'ログアウト',
 
-
+	//makeFileInTheme
+	"CREATENEWFILE" 				=> '新しいファイルを作成',
+	"FILECREATED" 					=> 'ファイルが作成されました!',
+	
 	//frontend settings
 
 
@@ -148,4 +150,4 @@ $i18n = [
 	'CHANGEPLACEHOLDER' 			=> '変更したい場合のみ変更してください'
 
 
-];;
+];

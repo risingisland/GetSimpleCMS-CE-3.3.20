@@ -126,7 +126,10 @@ $i18n = [
 	"TAB_SETTINGS"					=> 'Settings',
 	"TAB_LOGOUT"					=> 'Logout',
 
-
+	//makeFileInTheme
+	"CREATENEWFILE"					=> 'Create New File',
+	"FILECREATED"					=> 'File Created!',
+	
 	//frontend settings
 
 
@@ -134,17 +137,17 @@ $i18n = [
 
 	//admin settings
 
-	'FRONTENDTITLE' => 'Front End Settings',
-	'TURNONMTOPER' => 'Turn on frontend bar?',
-	'STYLEINFO' => 'Style for FrontEnd sidebar',
-	'ADMINTHEMESELECTOR' => 'Admin Theme Selector',
+	'FRONTENDTITLE' 				=> 'Front End Settings',
+	'TURNONMTOPER' 					=> 'Turn on frontend bar?',
+	'STYLEINFO' 					=> 'Style for FrontEnd sidebar',
+	'ADMINTHEMESELECTOR' 			=> 'Admin Theme Selector',
 
 	//manage users
 
-	'EMAIL' => 'e-mail:',
-	'PASSWORD' => 'Password:',
-	'LANG' => 'Language:',
-	'CHANGEPLACEHOLDER' => 'change only if you want to change'
+	'EMAIL' 						=> 'e-mail:',
+	'PASSWORD' 						=> 'Password:',
+	'LANG' 							=> 'Language:',
+	'CHANGEPLACEHOLDER' 			=> 'change only if you want to change'
 
 
-];;
+];

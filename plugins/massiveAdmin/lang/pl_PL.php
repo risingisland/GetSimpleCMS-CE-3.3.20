@@ -126,20 +126,28 @@ $i18n = [
 	"TAB_SETTINGS"					=> 'Ustawienia',
 	"TAB_LOGOUT"					=> 'Wyloguj',
 
+	//makeFileInTheme
+	"CREATENEWFILE"					=> 'Utwórz nowy plik',
+	"FILECREATED"					=> 'Plik utworzono!',
+	
+	//frontend settings
+
 
 	//new on 4.0
 
 	//admin settings
 
-	'FRONTENDTITLE' => 'Front End Ustawienia',
-	'TURNONMTOPER' => 'Włączyć bar na frontendzie?',
-	'STYLEINFO' => 'Style dla frontendu',
-	'ADMINTHEMESELECTOR' => 'Wybór tematu dla panelu Administracyjnego',
+	'FRONTENDTITLE' 				=> 'Front End Ustawienia',
+	'TURNONMTOPER' 					=> 'Włączyć bar na frontendzie?',
+	'STYLEINFO' 					=> 'Style dla frontendu',
+	'ADMINTHEMESELECTOR' 			=> 'Wybór tematu dla panelu Administracyjnego',
 
 	//manage users
 
-	'EMAIL' => 'e-mail:',
-	'PASSWORD' => 'Password:',
-	'LANG' => 'Język:',
-	'CHANGEPLACEHOLDER' => 'Zmień tylko jeśli chcesz zmienić'
-];;
+	'EMAIL' 						=> 'e-mail:',
+	'PASSWORD' 						=> 'Password:',
+	'LANG' 							=> 'Język:',
+	'CHANGEPLACEHOLDER' 			=> 'Zmień tylko jeśli chcesz zmienić'
+	
+	
+];

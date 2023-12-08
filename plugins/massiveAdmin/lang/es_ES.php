@@ -126,22 +126,28 @@ $i18n = [
 	"TAB_SETTINGS"					=> 'Ajustes',
 	"TAB_LOGOUT"					=> 'Cerrar sesión',
 
+	//makeFileInTheme
+	"CREATENEWFILE"					=> 'Crear Nuevo Archivo',
+	"FILECREATED"					=> '¡Archivo Creado!',
+	
+	//frontend settings
+
+
 	//nuevo en 4.0
 
 	//Configuración de administrador
 
-	'FRONTENDTITLE' => 'Configuración de interfaz',
-	'TURNONMTOPER' => '¿Activar barra frontal?',
-	'STYLEINFO' => 'Estilo para la barra lateral FrontEnd',
-	'ADMINTHEMESELECTOR' => 'Selector de temas de administración',
+	'FRONTENDTITLE' 				=> 'Configuración de interfaz',
+	'TURNONMTOPER' 					=> '¿Activar barra frontal?',
+	'STYLEINFO' 					=> 'Estilo para la barra lateral FrontEnd',
+	'ADMINTHEMESELECTOR' 			=> 'Selector de temas de administración',
 
 	// administrar usuarios
 
-	'CORREO ELECTRÓNICO' => 'correo electrónico:',
-	'CONTRASEÑA' => 'Contraseña:',
-	'LANG' => 'Idioma:',
-	'CHANGEPLACEHOLDER' => 'cambiar solo si quieres cambiar'
+	'EMAIL' 						=> 'correo electrónico:',
+	'PASSWORD' 						=> 'Contraseña:',
+	'LANG' 							=> 'Idioma:',
+	'CHANGEPLACEHOLDER' 			=> 'cambiar solo si quieres cambiar'
 
 
-
-];;
+];
