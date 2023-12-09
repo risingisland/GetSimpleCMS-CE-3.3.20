@@ -9,11 +9,10 @@ What has changed in this version of the Community Edition?
 **Whats New in this Update:**
 
 ⭐ Script updates:
-- fontawesome
-- fancybox
-- jquery
-- jquery-ui
-- scrolltofixed
+- Minor php8.x compatibility improvements 
+- Fontawesome added to core
+- Removed Uploadify
+- Updated Massive Admin
 
 **Recent Updates:**
 

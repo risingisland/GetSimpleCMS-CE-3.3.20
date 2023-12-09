@@ -9,7 +9,6 @@
  * @subpackage init
  */
 
-
 /**
  * Headers
  */
@@ -90,11 +89,7 @@ if(!is_frontend()){
 	}
 }
 
-
-
 // definition defaults
-
-if(!defined('GSNOUPLOADIFY')) define('GSNOUPLOADIFY',1); // disabled uploadify by default see https://github.com/GetSimpleCMS/GetSimpleCMS/issues/1266
 
 if(!defined('GSUPLOADSLC'))	define('GSUPLOADSLC',true);
 
@@ -144,7 +139,6 @@ if ( isDebug() ) {
 ini_set('log_errors', 1);
 ini_set('error_log', GSDATAOTHERPATH .'logs/errorlog.txt');
 
-
 /**
  * Variable check to prevent debugging going off
  * @todo some of these may not even be needed anymore
@@ -153,8 +147,6 @@ $admin_relative = (isset($admin_relative)) ? $admin_relative : '';
 $lang_relative = (isset($lang_relative)) ? $lang_relative : '';
 $load['login'] = (isset($load['login'])) ? $load['login'] : '';
 $load['plugin'] = (isset($load['plugin'])) ? $load['plugin'] : '';
-
-
 
 /**
  * Pull data from storage
@@ -173,7 +165,6 @@ if (file_exists($thisfilew)) {
 	$SITENAME = '';
 	$SITEURL = '';
 } 
-
 
 /** grab user data */
 if (isset($_COOKIE['GS_ADMIN_USERNAME'])) {
@@ -254,7 +245,6 @@ if(isset($TIMEZONE) && function_exists('date_default_timezone_set') && ($TIMEZON
 	date_default_timezone_set($TIMEZONE);
 }
 
-
 /**
  * Variable Globalization
  */
@@ -277,7 +267,6 @@ else {
 	}
 }
 $SESSIONHASH = sha1($SALT . $SITENAME);
-
 
 /**
  * $base is if the site is being viewed from the front-end
