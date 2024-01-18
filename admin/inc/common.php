@@ -327,6 +327,12 @@ if (get_filename_id() != 'install' && get_filename_id() != 'setup' && get_filena
 		if (file_exists('../LICENSE'))	{
 			$filedeletionstatus = unlink('../LICENSE');
 		}
+		if (file_exists('../plugins/README.md'))	{
+			$filedeletionstatus = unlink('../plugins/README.md');
+		}
+		if (file_exists('../theme/README.md'))	{
+			$filedeletionstatus = unlink('../theme/README.md');
+		}
 		if (!$filedeletionstatus) {
 			$error = sprintf(i18n_r('ERR_CANNOT_DELETE'), '<code>/'.$GSADMIN.'/install.php</code>, <code>/'.$GSADMIN.'/setup.php</code> or <code>/'.$GSADMIN.'/update.php</code>');
 		}
