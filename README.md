@@ -1,4 +1,4 @@
-### GetSimple CMS 3.3.19.1 COMMUNITY EDITION 
+### GetSimple CMS 3.3.20 COMMUNITY EDITION 
 The official unofficial GS update repo. Helping to bridge the gap in PHP compatibility. 
 
 What has changed in this version of the Community Edition?
