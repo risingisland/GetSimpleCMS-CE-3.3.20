@@ -11,8 +11,9 @@ What has changed in this version of the Community Edition?
 ⭐ Script updates:
 - Minor php8.x compatibility improvements 
 - Fontawesome added to core
-- Removed Uploadify
+- Removed Uploadify & Jcrop
 - Updated Massive Admin
+- Other minor fixes and improvements
 
 **Recent Updates:**
 
