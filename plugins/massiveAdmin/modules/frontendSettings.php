@@ -25,17 +25,17 @@ $styleFile = @file_get_contents(GSDATAOTHERPATH . 'massiveToperSettings/style.tx
         };; ?>
     </select>
 
-    <input type="submit" style="background:var(--main-color);color:#fff;padding:10px;margin-top:10px;border:none;" name="savesettings" value="<?php echo i18n_r('massiveAdmin/SAVEOPTION');?>">
+    <input type="submit" style="background:var(--main-color);color:#fff;padding:10px;margin-top:10px;border:none;" name="savesettings" value="<?php echo i18n_r('massiveAdmin/SAVEOPTION'); ?>">
 </form>
 
 
-<?php if(file_exists(GSDATAOTHERPATH.'massiveToperSettings/style.txt')):?>
+<?php if (file_exists(GSDATAOTHERPATH . 'massiveToperSettings/style.txt')) : ?>
 
     <script>
-    document.querySelector('.style').value = '<?php echo $styleFile; ?>';
-</script>
+        document.querySelector('.style').value = '<?php echo $styleFile; ?>';
+    </script>
 
-<?php endif;?>
+<?php endif; ?>
 
 <?php
 

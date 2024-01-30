@@ -37,14 +37,14 @@ $i18n = [
 	'SHOW'							=> 'Afficher',
 	'HIDE'							=> 'Masquer',
 	'HIDSECTIONTITLE' 				=> 'Quelles sections souhaitez-vous masquer ?',
-	'HIDEPAGES' 					=> 'Masquer la section "<strong><i class="uil uil-desktop"></i> Pages</strong>" ?',
-	'HIDEFILES' 					=> 'Masquer la section "<strong><i class="uil uil-file"></i> Fichiers</strong>"?',
-	'HIDETHEMES' 					=> 'Masquer la section "<strong><i class="uil uil-paint-tool"></i> Thèmes</strong>" ?',
-	'HIDEBACKUP' 					=> 'Masquer la section "<strong><i class="uil uil-save"></i> Sauvegarde</strong>" ?',
-	'HIDEPLUGIN' 					=> 'Masquer la section "<strong><i class="uil uil-plug"></i>Plugin</strong>" ?',
-	'HIDESUPPORT' 					=> 'Masquer la section "<strong><i class="uil uil-life-ring"></i> Support</strong>" ?',
-	'HIDESETTINGS' 					=> 'Masquer la section "<strong><i class="uil uil-setting"></i> Paramètres MassiveAdmin</strong>"?',
-	'HIDEI18NGALLERY' 				=> 'Masquer la section "<strong><i class="uil uil-images"></i> galerie i18n</strong>"? (si existe)',
+	'HIDEPAGES' 					=> 'Masquer la section "<strong>Pages</strong>" ?',
+	'HIDEFILES' 					=> 'Masquer la section "<strong>Fichiers</strong>"?',
+	'HIDETHEMES' 					=> 'Masquer la section "<strong>Thèmes</strong>" ?',
+	'HIDEBACKUP' 					=> 'Masquer la section "<strong>Sauvegarde</strong>" ?',
+	'HIDEPLUGIN' 					=> 'Masquer la section "<strong>Plugin</strong>" ?',
+	'HIDESUPPORT' 					=> 'Masquer la section "<strong>Support</strong>" ?',
+	'HIDESETTINGS' 					=> 'Masquer la section "<strong>Paramètres MassiveAdmin</strong>"?',
+	'HIDEI18NGALLERY' 				=> 'Masquer la section "<strong>galerie i18n</strong>"? (si existe)',
 	'HIDEUSERS' 					=> 'Masquer les sections pour les utilisateurs suivants:',
 
 	//user manager
@@ -147,7 +147,22 @@ $i18n = [
 	'EMAIL' 						=> 'e-mail :',
 	'PASSWORD' 						=> 'Mot de passe :',
 	'LANG' 							=> 'Langue :',
-	'CHANGEPLACEHOLDER' 			=> 'changez seulement si vous souhaitez changer'
+	'CHANGEPLACEHOLDER' 			=> 'changez seulement si vous souhaitez changer',
 
+
+	//new on 5.0
+
+	'FILECREATED' 					=> 'Fichier créé !',
+	'WATCHEXAMPLE' 					=> 'Voir un exemple de structure',
+	'HOWUSETHEMECONFIG' 			=> 'Si vous souhaitez utiliser les paramètres de votre modèle, créez simplement <code style="color:blue;">settings.json</code> dans le dossier du modèle que vous utilisez et appliquez la structure appropriée. Comme dans l\'exemple. Ensuite, appliquez le <b style="color:green;">mats("fieldname")</b> ou <b style="color:green;">r_mats("fieldname")</b> pour renvoyer la fonction à les champs appropriés.',
+	'HOWCREATETITLE' 				=> 'Comment créer vos propres paramètres ?',
+	'TUTORIALHOWCREATESETTINGS' 	=> 'Créez votre <code style="color:blue;">settings.json</code> à la racine de votre dossier de thème, avec une structure basée sur cet exemple avec différents types d\'options',
+	'THEMECONFIGURATORNAME' 		=> 'Configurateur de thème',
+
+	'BACKUPCREATOR' 				=> 'Créateur de sauvegarde',
+	'CREATEBACKUP' 					=> 'Créer une sauvegarde',
+	'SETTINGS' 						=> 'Paramètres',
+	'NOSETTINGSCREATED' 			=> 'Aucun settings.json créé.',
+	'SHOWPASSWORD' 					=> 'Montrer le mot de passe'
 
 ];

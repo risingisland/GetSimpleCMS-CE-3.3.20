@@ -36,14 +36,14 @@ $i18n = [
     'SHOW' 							=> "Показати",
     'HIDE' 							=> "Приховати",
     'HIDSECTIONTITLE' 				=> "Які розділи Ви хочете приховати?",
-    'HIDEPAGES' 					=> "Приховати розділ \"<strong><i class=\"uil uil-desktop\"></i> Строрінки</strong>\"?",
-    'HIDEFILES' 					=> "Приховати розділ \"<strong><i class=\"uil uil-file\"></i> Файли</strong>\"?",
-    'HIDETHEMES' 					=> "Приховати розділ \"<strong><i class=\"uil uil-paint-tool\"></i> Теми</strong>\"?",
-    'HIDEBACKUP' 					=> "Приховати розділ \"<strong><i class=\"uil uil-save\"></i>Резервне копіювання</strong>\"?",
-    'HIDEPLUGIN' 					=> "Приховати розділ \"<strong><i class=\"uil uil-plug\"></i> Плагіни</strong>\"?",
-    'HIDESUPPORT' 					=> "Приховати розділ \"<strong><i class=\"uil uil-plug\"></i> Підтримка</strong>\"?",
-    'HIDESETTINGS' 					=> "Приховати розділ \"<strong><i class=\"uil uil-plug\"></i> Налаштування MassiveAdmin</strong>\"?",
-    'HIDEI18NGALLERY' 				=> "Приховати розділ \"<strong><i class=\"uil uil-images\"></i> Галерея i18n</strong>\"? (якщо плагін встановлено)",
+    'HIDEPAGES' 					=> "Приховати розділ \"<strong>Строрінки</strong>\"?",
+    'HIDEFILES' 					=> "Приховати розділ \"<strong>Файли</strong>\"?",
+    'HIDETHEMES' 					=> "Приховати розділ \"<strong>Теми</strong>\"?",
+    'HIDEBACKUP' 					=> "Приховати розділ \"<strong>Резервне копіювання</strong>\"?",
+    'HIDEPLUGIN' 					=> "Приховати розділ \"<strong>Плагіни</strong>\"?",
+    'HIDESUPPORT' 					=> "Приховати розділ \"<strong>Підтримка</strong>\"?",
+    'HIDESETTINGS' 					=> "Приховати розділ \"<strong>Налаштування MassiveAdmin</strong>\"?",
+    'HIDEI18NGALLERY' 				=> "Приховати розділ \"<strong>Галерея i18n</strong>\"? (якщо плагін встановлено)",
     'HIDEUSERS' 					=> "Приховати розділ для наступних користувачів:",
 
 	//user manager
@@ -145,7 +145,22 @@ $i18n = [
 	'EMAIL' 						=> "Пароль:",
 	'PASSWORD' 						=> "Password:",
     'LANG' 							=> "Мова:",
-    'CHANGEPLACEHOLDER' 			=> "змінити, якщо тільки Ви хочете змінити"
+    'CHANGEPLACEHOLDER' 			=> "змінити, якщо тільки Ви хочете змінити",
 
+
+	//new on 5.0
+
+	'FILECREATED' 					=> 'Файл створено!',
+	'WATCHEXAMPLE' 					=> 'Переглянути приклад структури',
+	'HOWUSETHEMECONFIG' 			=> 'Якщо ви хочете використовувати налаштування для свого шаблону, просто створіть <code style="color:blue;">settings.json</code> у папці шаблону, який ви використовуєте, і застосуйте відповідну структуру як у прикладі. Потім застосуйте <b style="color:green;">mats("fieldname")</b> або <b style="color:green;">r_mats("fieldname")</b> для функції повернення до відповідні поля.',
+	'HOWCREATETITLE' 				=> 'Як створити власні налаштування?',
+	'TUTORIALHOWCREATESETTINGS' 	=> 'Створіть свій <code style="color:blue;">settings.json</code> у корені вашої папки теми зі структурою на основі цього прикладу з різними типами параметрів',
+	'THEMECONFIGURATORNAME' 		=> 'Конфігуратор теми',
+
+	'BACKUPCREATOR' 				=> 'Створення резервної копії',
+	'CREATEBACKUP' 					=> 'Створити резервну копію',
+	'SETTINGS' 						=> 'Налаштування',
+	'NOSETTINGSCREATED' 			=> 'Не створено файлу settings.json.',
+	'SHOWPASSWORD' 					=> 'Показати пароль'
 
 ];

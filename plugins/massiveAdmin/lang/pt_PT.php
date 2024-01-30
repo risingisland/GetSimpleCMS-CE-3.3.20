@@ -37,14 +37,14 @@ $i18n = [
 	'SHOW' 							=> 'Mostrar',
 	'HIDE' 							=> 'Ocultar',
 	'HIDSECTIONTITLE' 				=> 'Quais seções você deseja ocultar?',
-	'HIDEPAGES' 					=> 'Ocultar a seção "<strong><i class="uil uil-desktop"></i> Páginas</strong>"?',
-	'HIDEFILES' 					=> 'Ocultar a seção "<strong><i class="uil uil-file"></i> Arquivos</strong>"?',
-	'HIDETHEMES' 					=> 'Ocultar a seção "<strong><i class="uil uil-paint-tool"></i> Temas</strong>"?',
-	'HIDEBACKUP' 					=> 'Ocultar a seção "<strong><i class="uil uil-save"></i> Backup</strong>"?',
-	'HIDEPLUGIN' 					=> 'Ocultar a seção "<strong><i class="uil uil-plug"></i> Plugin</strong>"?',
-	'HIDESUPPORT' 					=> 'Ocultar seção "<strong><i class="uil uil-life-ring"></i> Suporte</strong>"?',
-	'HIDESETTINGS' 					=> 'Ocultar a seção "<strong><i class="uil uil-setting"></i> MassiveAdmin Settings</strong>"?',
-	'HIDEI18NGALLERY' 				=> 'Ocultar a seção "<strong><i class="uil uil-images"></i> galeria i18n</strong>"? (se existir)',
+	'HIDEPAGES' 					=> 'Ocultar a seção "<strong>Páginas</strong>"?',
+	'HIDEFILES' 					=> 'Ocultar a seção "<strong>Arquivos</strong>"?',
+	'HIDETHEMES' 					=> 'Ocultar a seção "<strong>Temas</strong>"?',
+	'HIDEBACKUP' 					=> 'Ocultar a seção "<strong>Backup</strong>"?',
+	'HIDEPLUGIN' 					=> 'Ocultar a seção "<strong>Plugin</strong>"?',
+	'HIDESUPPORT' 					=> 'Ocultar seção "<strong>Suporte</strong>"?',
+	'HIDESETTINGS' 					=> 'Ocultar a seção "<strong>MassiveAdmin Settings</strong>"?',
+	'HIDEI18NGALLERY' 				=> 'Ocultar a seção "<strong>galeria i18n</strong>"? (se existir)',
 	'HIDEUSERS' 					=> 'Ocultar seções para os seguintes usuários:',
 
 	//user manager
@@ -129,7 +129,7 @@ $i18n = [
 	//makeFileInTheme
 	"CREATENEWFILE"					=> 'Criar novo arquivo',
 	"FILECREATED"					=> 'Arquivo criado!',
-
+	
 	//frontend settings
 
 
@@ -138,16 +138,31 @@ $i18n = [
 	//admin settings
 
 	'FRONTENDTITLE' 				=> 'Configurações de front-end',
-	'TURNONMTOPER' 					=> 'Ativar a barra de interface?',
+	'TURNONMTOPER' 					=> 'Ativar barra de frontend?',
 	'STYLEINFO' 					=> 'Estilo para barra lateral FrontEnd',
-	'ADMINTHEMESELECTOR' 			=> 'Seletor de temas do administrador',
+	'ADMINTHEMESELECTOR' 			=> 'Seletor de tema de administrador',
 
 	//manage users
 
 	'EMAIL' 						=> 'e-mail:',
 	'PASSWORD' 						=> 'Senha:',
 	'LANG' 							=> 'Idioma:',
-	'CHANGEPLACEHOLDER' 			=> 'alterar apenas se você quiser alterar'
+	'CHANGEPLACEHOLDER' 			=> 'mude apenas se quiser mudar',
 
+
+	//new on 5.0
+
+	'FILECREATED' 					=> 'Arquivo criado!',
+	'WATCHEXAMPLE' 					=> 'Ver exemplo de estrutura',
+	'HOWUSETHEMECONFIG' 			=> 'Se você quiser usar configurações para o seu modelo, basta criar <code style="color:blue;">settings.json</code> na pasta do modelo que você está usando e aplicar a estrutura apropriada como no exemplo. Em seguida, aplique o <b style="color:green;">mats("fieldname")</b> ou <b style="color:green;">r_mats("fieldname")</b> para a função de retorno para os campos apropriados.',
+	'HOWCREATETITLE' 				=> 'Como criar suas próprias configurações?',
+	'TUTORIALHOWCREATESETTINGS' 	=> 'Crie seu <code style="color:blue;">settings.json</code> na raiz da pasta do seu tema, com uma estrutura baseada neste exemplo com diferentes tipos de opções',
+	'THEMECONFIGURATORNAME' 		=> 'Configurador de Tema',
+
+	'BACKUPCREATOR' 				=> 'Criador de backup',
+	'CREATEBACKUP' 					=> 'Criar Backup',
+	'SETTINGS' 						=> 'Configurações',
+	'NOSETTINGSCREATED' 			=> 'Nenhum arquivo settings.json criado.',
+	'SHOWPASSWORD' 					=> 'Mostrar senha'
 
 ];

@@ -37,14 +37,14 @@ $i18n = [
 	'SHOW' 							=> 'Zeigen',
 	'HIDE' 							=> 'Verstecken',
 	'HIDSECTIONTITLE' 				=> 'Welche Abschnitte möchten Sie ausblenden?',
-	'HIDEPAGES' 					=> 'Abschnitt „<strong><i class="uil uil-desktop"></i> Seiten</strong>“ ausblenden?',
-	'HIDEFILES' 					=> 'Abschnitt „<strong><i class="uil uil-file"></i>Dateien</strong>“ ausblenden?',
-	'HIDETHEMES' 					=> 'Abschnitt „<strong><i class="uil uil-paint-tool"></i>Themen</strong>“ ausblenden?',
-	'HIDEBACKUP' 					=> 'Abschnitt „<strong><i class="uil uil-save"></i> Backup</strong>“ ausblenden?',
-	'HIDEPLUGIN' 					=> 'Abschnitt „<strong><i class="uil uil-plug"></i>Plugin</strong>“ ausblenden?',
-	'HIDESUPPORT' 					=> 'Abschnitt „<strong><i class="uil uil-life-ring"></i>Support</strong>“ ausblenden?',
-	'HIDESETTINGS' 					=> 'Abschnitt „<strong><i class="uil uil-setting"></i>MassiveAdmin-Einstellungen</strong>“ ausblenden?',
-	'HIDEI18NGALLERY' 				=> 'Abschnitt „<strong><i class="uil uil-images"></i> i18n-Galerie</strong>“ ausblenden? (falls vorhanden)',
+	'HIDEPAGES' 					=> 'Abschnitt „<strong>Seiten</strong>“ ausblenden?',
+	'HIDEFILES' 					=> 'Abschnitt „<strong>Dateien</strong>“ ausblenden?',
+	'HIDETHEMES' 					=> 'Abschnitt „<strong>Themen</strong>“ ausblenden?',
+	'HIDEBACKUP' 					=> 'Abschnitt „<strong>Backup</strong>“ ausblenden?',
+	'HIDEPLUGIN' 					=> 'Abschnitt „<strong>Plugin</strong>“ ausblenden?',
+	'HIDESUPPORT' 					=> 'Abschnitt „<strong>Support</strong>“ ausblenden?',
+	'HIDESETTINGS' 					=> 'Abschnitt „<strong>MassiveAdmin-Einstellungen</strong>“ ausblenden?',
+	'HIDEI18NGALLERY' 				=> 'Abschnitt „<strong>i18n-Galerie</strong>“ ausblenden? (falls vorhanden)',
 	'HIDEUSERS' 					=> 'Abschnitte für folgende Benutzer ausblenden:',
 
 	//user manager
@@ -147,7 +147,22 @@ $i18n = [
 	'EMAIL' 						=> 'e-mail:',
 	'PASSWORD' 						=> 'Passwort:',
 	'LANG' 							=> 'Sprache:',
-	'CHANGEPLACEHOLDER' 			=> 'nur ändern, wenn Sie ändern möchten'
+	'CHANGEPLACEHOLDER' 			=> 'nur ändern, wenn Sie ändern möchten',
 
+
+	//new on 5.0
+
+	'FILECREATED' 					=> 'Datei erstellt!',
+	'WATCHEXAMPLE' 					=> 'Beispielstruktur anzeigen',
+	'HOWUSETHEMECONFIG' 			=> 'Wenn Sie Einstellungen für Ihre Vorlage verwenden möchten, erstellen Sie einfach <code style="color:blue;">settings.json</code> im Ordner der Vorlage, die Sie verwenden, und wenden Sie die entsprechende Struktur an wie im Beispiel. Wenden Sie dann <b style="color:green;">mats("fieldname")</b> oder <b style="color:green;">r_mats("fieldname")</b> für die Rückgabefunktion an die entsprechenden Felder.',
+	'HOWCREATETITLE' 				=> 'Wie erstelle ich meine eigenen Einstellungen?',
+	'TUTORIALHOWCREATESETTINGS' 	=> 'Erstellen Sie Ihre <code style="color:blue;">settings.json</code> im Stammverzeichnis Ihres Theme-Ordners, mit einer Struktur basierend auf diesem Beispiel mit verschiedenen Arten von Optionen',
+	'THEMECONFIGURATORNAME' 		=> 'Theme-Konfigurator',
+
+	'BACKUPCREATOR' 				=> 'Backup-Ersteller',
+	'CREATEBACKUP' 					=> 'Backup erstellen',
+	'SETTINGS' 						=> 'Einstellungen',
+	'NOSETTINGSCREATED' 			=> 'Keine Settings.json erstellt.',
+	'SHOWPASSWORD' 					=> 'Passwort anzeigen'
 
 ];

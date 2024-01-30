@@ -10,6 +10,10 @@ if (isset($_GET['snippet'])) {
 	$sett = 'pages';
 } elseif (isset($_GET['downloader']) || isset($_GET['unistaller'])) {
 	$sett = 'plugins';
+} elseif (isset($_GET['backupcreator'])) {
+	$sett = 'backups';
+} elseif (isset($_GET['themesettings'])) {
+	$sett = 'theme';
 } else {
 	$sett = 'settings';
 }
@@ -18,7 +22,7 @@ if (isset($_GET['snippet'])) {
 register_plugin(
 	$thisfile, //Plugin id
 	'Massive Admin Theme', 	//Plugin name
-	'4.2', 		//Plugin version
+	'5.0.1', 		//Plugin version
 	'Multicolor',  //Plugin author
 	'https://multicolor.stargard.pl', //author website
 	'Admin theme with new function', //Plugin description
@@ -32,6 +36,8 @@ global $SITEURL;
 require(GSPLUGINPATH . 'massiveAdmin/class/massiveAdmin.class.php');
 
 $MA = new MassiveAdminClass();
+
+ 
 
 # new option on file browser
 add_action('file-extras', 'newOptionsMassive');
@@ -80,7 +86,7 @@ if (file_exists(GSDATAOTHERPATH . 'massiveTheme/option.txt')) {
 }
 
 
-register_style('masivestyle', $SITEURL . 'plugins/massiveAdmin/theme/' . $themeChecker  . '.css', '2.0', 'screen');
+register_style('masivestyle', $SITEURL . 'plugins/massiveAdmin/theme/' . $themeChecker  . '.css', '5.0', 'screen');
 queue_style('masivestyle', GSBACK);
 
 add_action('footer', 'ckeStyleImplementation');
@@ -151,8 +157,8 @@ if (isset($_COOKIE['GS_ADMIN_USERNAME'])) {
 
 
 			if (file_exists($mtoperSettingPath . 'turnon.txt')) {
-				$checkTurnOn = file_get_contents($mtoperSettingPath . 'turnon.txt');
-				$style = file_get_contents($mtoperSettingPath . 'style.txt');
+				$checkTurnOn = @file_get_contents($mtoperSettingPath . 'turnon.txt');
+				$style = @file_get_contents($mtoperSettingPath . 'style.txt');
 
 
 
@@ -250,7 +256,7 @@ if (file_exists($helpFile)) {
 	$help = i18n_r('massiveAdmin/HELP');
 
 	if ($checkTrue == 'true') {
-		add_action('nav-tab', 'createSideMenu', [$thisfile, '<i class="uil uil-life-ring"></i>' . $help, 'helpfromuser']);
+		add_action('nav-tab', 'createSideMenu', [$thisfile, '<i class="gg-support"></i>' . $help, 'helpfromuser']);
 	}
 }
 
@@ -327,6 +333,69 @@ function makeFileInTheme()
 
 
 
+$bctitle = i18n_r('massiveAdmin/BACKUPCREATOR');
+
+add_action('backups-sidebar', 'createSideMenu',  [$thisfile, $bctitle, 'backupcreator']);
+
+
+$tctitle = i18n_r('massiveAdmin/THEMECONFIGURATORNAME');
+
+add_action('theme-sidebar', 'createSideMenu',  [$thisfile, $tctitle, 'themesettings']);
+
+
+
+# theme settings functions
+
+function mats($field)
+{
+
+	$xml = simplexml_load_file(GSDATAOTHERPATH . 'website.xml');
+
+	$activeTemplate = $xml->TEMPLATE;
+
+
+	if (file_exists(GSTHEMESPATH . $activeTemplate . '/settings.json')) {
+		$data = file_get_contents(GSTHEMESPATH . $activeTemplate . '/settings.json');
+		$filx =  json_decode($data);
+
+		if($filx->settings->$field->type !== 'wysywig'){
+		echo $filx->settings->$field->value;
+		}else{
+		echo html_entity_decode($filx->settings->$field->value);
+		}
+
+		
+	} else {
+		echo i18n_r('massiveAdmin/NOSETTINGSCREATED');
+	}
+};
+
+
+function r_mats($field)
+{
+
+	$xml = simplexml_load_file(GSDATAOTHERPATH . 'website.xml');
+
+	$activeTemplate = $xml->TEMPLATE;
+
+
+	if (file_exists(GSTHEMESPATH . $activeTemplate . '/settings.json')) {
+		$data = file_get_contents(GSTHEMESPATH . $activeTemplate . '/settings.json');
+		$filx =  json_decode($data);
+
+		
+		if($filx->settings->$field->type !== 'wysywig'){
+			return $filx->settings->$field->value;
+			}else{
+			return html_entity_decode($filx->settings->$field->value);
+			}
+
+	} else {
+		echo i18n_r('massiveAdmin/NOSETTINGSCREATED');
+	}
+}
+
+
 
 # all massive option  
 function massiveOption()
@@ -363,6 +432,10 @@ function massiveOption()
 		include(GSPLUGINPATH . 'massiveAdmin/modules/themeSelector.php');
 	} elseif (isset($_GET['frontendsettings'])) {
 		include(GSPLUGINPATH . 'massiveAdmin/modules/frontendSettings.php');
+	} elseif (isset($_GET['backupcreator'])) {
+		include(GSPLUGINPATH . 'massiveAdmin/modules/backupCreator.php');
+	} elseif (isset($_GET['themesettings'])) {
+		include(GSPLUGINPATH . 'massiveAdmin/modules/themesettings.php');
 	};;
 
 	echo "

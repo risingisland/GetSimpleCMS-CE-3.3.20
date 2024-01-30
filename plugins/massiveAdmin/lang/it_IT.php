@@ -37,14 +37,14 @@ $i18n = [
 	'SHOW' 							=> 'Mostra',
 	'HIDE' 							=> 'Nascondi',
 	'HIDSECTIONTITLE' 				=> 'Quali sezioni vuoi nascondere?',
-	'HIDEPAGES' 					=> 'Nascondere la sezione "<strong><i class="uil uil-desktop"></i>Pagine</strong>"?',
-	'HIDEFILES' 					=> 'Nascondere la sezione "<strong><i class="uil uil-file"></i>File</strong>"?',
-	'HIDETHEMES' 					=> 'Nascondere la sezione "<strong><i class="uil uil-paint-tool"></i> Temi</strong>"?',
-	'HIDEBACKUP' 					=> 'Nascondere la sezione "<strong><i class="uil uil-save"></i>Backup</strong>"?',
-	'HIDEPLUGIN' 					=> 'Nascondere la sezione "<strong><i class="uil uil-plug"></i>Plugin</strong>"?',
-	'HIDESUPPORT' 					=> 'Nascondere la sezione "<strong><i class="uil uil-life-ring"></i> Assistenza</strong>"?',
-	'HIDESETTINGS' 					=> 'Nascondere la sezione "<strong><i class="uil uil-setting"></i> Impostazioni MassiveAdmin</strong>"?',
-	'HIDEI18NGALLERY' 				=> 'Nascondere la sezione "<strong><i class="uil uil-images"></i> galleria i18n</strong>"? (se esiste)',
+	'HIDEPAGES' 					=> 'Nascondere la sezione "<strong>Pagine</strong>"?',
+	'HIDEFILES' 					=> 'Nascondere la sezione "<strong>File</strong>"?',
+	'HIDETHEMES' 					=> 'Nascondere la sezione "<strong>Temi</strong>"?',
+	'HIDEBACKUP' 					=> 'Nascondere la sezione "<strong>Backup</strong>"?',
+	'HIDEPLUGIN' 					=> 'Nascondere la sezione "<strong>Plugin</strong>"?',
+	'HIDESUPPORT' 					=> 'Nascondere la sezione "<strong>Assistenza</strong>"?',
+	'HIDESETTINGS' 					=> 'Nascondere la sezione "<strong>Impostazioni MassiveAdmin</strong>"?',
+	'HIDEI18NGALLERY' 				=> 'Nascondere la sezione "<strong>galleria i18n</strong>"? (se esiste)',
 	'HIDEUSERS' 					=> 'Nascondi le sezioni per i seguenti utenti:',
 
 	//user manager
@@ -147,7 +147,22 @@ $i18n = [
 	'EMAIL' 						=> 'e-mail:',
 	'PASSWORD' 						=> 'Password:',
 	'LANG' 							=> 'Lingua:',
-	'CHANGEPLACEHOLDER' 			=> 'cambia solo se vuoi cambiare'
+	'CHANGEPLACEHOLDER' 			=> 'cambia solo se vuoi cambiare',
 
+
+	//new on 5.0
+
+	'FILECREATED' 					=> 'File creato!',
+	'WATCHEXAMPLE' 					=> 'Visualizza struttura di esempio',
+	'HOWUSETHEMECONFIG' 			=> 'Se vuoi utilizzare le impostazioni per il tuo modello, crea semplicemente <code style="color:blue;">settings.json</code> nella cartella del modello che stai utilizzando e applica la struttura appropriata come nell\'esempio. Quindi applica <b style="color:green;">mats("fieldname")</b> o <b style="color:green;">r_mats("fieldname")</b> per la funzione di ritorno a i campi appropriati.',
+	'HOWCREATETITLE' 				=> 'Come creare le tue impostazioni?',
+	'TUTORIALHOWCREATESETTINGS' 	=> 'Crea il tuo <code style="color:blue;">settings.json</code> nella radice della cartella del tema, con una struttura basata su questo esempio con diversi tipi di opzioni',
+	'THEMECONFIGURATORNAME' 		=> 'Configuratore temi',
+
+	'BACKUPCREATOR' 				=> 'Creatore di backup',
+	'CREATEBACKUP' 					=> 'Crea backup',
+	'SETTINGS' 						=> 'Impostazioni',
+	'NOSETTINGSCREATED' 			=> 'Nessun settings.json creato.',
+	'SHOWPASSWORD' 					=> 'Mostra password'
 
 ];

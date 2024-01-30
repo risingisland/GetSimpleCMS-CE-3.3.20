@@ -37,14 +37,14 @@ $i18n = [
 	'SHOW' 							=> '表示'、
 	'HIDE' 							=> '隠す'、
 	'HIDSECTIONTITLE' 				=> 'どのセクションを非表示にしますか?',
-	'HIDEPAGES' 					=> '<strong><i class="uil uil-desktop"></i> ページ</strong>セクションを非表示にしますか?',
-	'HIDEFILES' 					=> '<strong><i class="uil uil-file"></i> ファイル</strong>セクションを非表示にしますか?',
-	'HIDETHEMES' 					=> '<strong><i class="uil uil-paint-tool"></i> テーマ</strong>セクションを非表示にしますか?',
-	'HIDEBACKUP' 					=> '<strong><i class="uil uil-save"></i> バックアップ</strong>セクションを非表示にしますか?',
-	'HIDEPLUGIN' 					=> '<strong><i class="uil uil-plug"></i> プラグイン</strong>セクションを非表示にしますか?',
-	'HIDESUPPORT' 					=> '<strong><i class="uil uil-life-ring"></i> サポート</strong>セクションを非表示にしますか?',
-	'HIDESETTINGS' 					=> '<strong><i class="uil uil-setting"></i> MassiveAdmin 設定</strong>セクションを非表示にしますか?',
-	'HIDEI18NGALLERY' 				=> '<strong><i class="uil uil-images"></i> i18n ギャラリー</strong>セクションを非表示にしますか? (存在する場合)'、
+	'HIDEPAGES' 					=> '<strong>ページ</strong>セクションを非表示にしますか?',
+	'HIDEFILES' 					=> '<strong>ファイル</strong>セクションを非表示にしますか?',
+	'HIDETHEMES' 					=> '<strong>テーマ</strong>セクションを非表示にしますか?',
+	'HIDEBACKUP' 					=> '<strong>バックアップ</strong>セクションを非表示にしますか?',
+	'HIDEPLUGIN' 					=> '<strong>プラグイン</strong>セクションを非表示にしますか?',
+	'HIDESUPPORT' 					=> '<strong>サポート</strong>セクションを非表示にしますか?',
+	'HIDESETTINGS' 					=> '<strong>MassiveAdmin 設定</strong>セクションを非表示にしますか?',
+	'HIDEI18NGALLERY' 				=> '<strong>i18n ギャラリー</strong>セクションを非表示にしますか? (存在する場合)'、
 	'HIDEUSERS' 					=> '次のユーザーのセクションを非表示:',
 
 	//user manager
@@ -147,7 +147,22 @@ $i18n = [
 	'EMAIL' 						=> '電子メール:',
 	'PASSWORD' 						=> 'パスワード:',
 	'LANG' 							=> '言語:',
-	'CHANGEPLACEHOLDER' 			=> '変更したい場合のみ変更してください'
+	'CHANGEPLACEHOLDER' 			=> '変更したい場合のみ変更してください',
 
+
+	//new on 5.0
+
+	'FILECREATED' 					=> 'ファイルが作成されました!',
+	'WATCHEXAMPLE' 					=> 'サンプル構造を表示',
+	'HOWUSETHEMECONFIG' 			=> 'テンプレートの設定を使用したい場合は、使用しているテンプレートのフォルダーに <code style="color:blue;">settings.json</code> を作成し、適切な構造を適用してください。例のように。次に、戻り関数の <b style="color:green;">mats("fieldname")</b> または <b style="color:green;">r_mats("fieldname")</b> を適用します。適切なフィールド。',
+	'HOWCREATETITLE' 				=> '独自の設定を作成するには?',
+	'TUTORIALHOWCREATESETTINGS' 	=> 'さまざまなタイプのオプションを備えたこの例に基づいた構造で、テーマ フォルダーのルートに <code style="color:blue;">settings.json</code> を作成します',
+	'THEMECONFIGURATORNAME' 		=> 'テーマコンフィギュレーター',
+
+	'BACKUPCREATOR' 				=> 'バックアップ作成者',
+	'CREATEBACKUP' 					=> 'バックアップの作成',
+	'SETTINGS' 						=> '設定'、
+	'NOSETTINGSCREATED' 			=> 'settings.json は作成されませんでした。',
+	'SHOWPASSWORD' 					=> 'パスワードを表示'
 
 ];

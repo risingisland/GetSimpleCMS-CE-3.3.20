@@ -37,14 +37,14 @@ $i18n = [
 	'SHOW' 							=> 'Toon',
 	'HIDE' 							=> 'Verbergen',
 	'HIDSECTIONTITLE' 				=> 'Welke secties wil je verbergen?',
-	'HIDEPAGES' 					=> 'sectie "<strong><i class="uil uil-desktop"></i> Pagina\'s</strong>" verbergen?',
-	'HIDEFILES' 					=> 'De sectie "<strong><i class="uil uil-file"></i> Bestanden</strong>" verbergen?',
-	'HIDETHEMES' 					=> 'De sectie "<strong><i class="uil uil-paint-tool"></i> Thema\'s</strong>" verbergen?',
-	'HIDEBACKUP' 					=> 'De sectie "<strong><i class="uil uil-save"></i> Back-up</strong>" verbergen?',
-	'HIDEPLUGIN' 					=> 'De sectie "<strong><i class="uil uil-plug"></i> Plug-in</strong>" verbergen?',
-	'HIDESUPPORT' 					=> 'De sectie "<strong><i class="uil uil-life-ring"></i> Ondersteuning</strong>" verbergen?',
-	'HIDESETTINGS' 					=> 'De sectie "<strong><i class="uil uil-setting"></i> MassiveAdmin-instellingen</strong>" verbergen?',
-	'HIDEI18NGALLERY' 				=> 'De sectie "<strong><i class="uil uil-images"></i> i18n gallery</strong>" verbergen? (indien bestaat)',
+	'HIDEPAGES' 					=> 'sectie "<strong>Pagina\'s</strong>" verbergen?',
+	'HIDEFILES' 					=> 'De sectie "<strong>Bestanden</strong>" verbergen?',
+	'HIDETHEMES' 					=> 'De sectie "<strong>Thema\'s</strong>" verbergen?',
+	'HIDEBACKUP' 					=> 'De sectie "<strong>Back-up</strong>" verbergen?',
+	'HIDEPLUGIN' 					=> 'De sectie "<strong>Plug-in</strong>" verbergen?',
+	'HIDESUPPORT' 					=> 'De sectie "<strong>Ondersteuning</strong>" verbergen?',
+	'HIDESETTINGS' 					=> 'De sectie "<strong>MassiveAdmin-instellingen</strong>" verbergen?',
+	'HIDEI18NGALLERY' 				=> 'De sectie "<strong>i18n gallery</strong>" verbergen? (indien bestaat)',
 	'HIDEUSERS' 					=> 'Verberg secties voor de volgende gebruikers:',
 
 	//user manager
@@ -147,7 +147,22 @@ $i18n = [
 	'EMAIL' 	 					=> 'e-mail:',
 	'PASSWORD' 	 					=> 'Wachtwoord:',
 	'LANG' 	 						=> 'Taal:',
-	'CHANGEPLACEHOLDER' 	 		=> 'wijzig alleen als je wilt veranderen'
+	'CHANGEPLACEHOLDER' 	 		=> 'wijzig alleen als je wilt veranderen',
 
+
+	//new on 5.0
+
+	'FILECREATED' 					=> 'Bestand aangemaakt!',
+	'WATCHEXAMPLE' 					=> 'Bekijk voorbeeldstructuur',
+	'HOWUSETHEMECONFIG' 			=> 'Als je instellingen voor je sjabloon wilt gebruiken, maak dan <code style="color:blue;">settings.json</code> aan in de map van de sjabloon die je gebruikt en pas de juiste structuur toe zoals in het voorbeeld. Pas vervolgens de <b style="color:green;">mats("fieldname")</b> of <b style="color:green;">r_mats("fieldname")</b> toe voor de retourfunctie naar de juiste velden.',
+	'HOWCREATETITLE' 				=> 'Hoe maak je je eigen instellingen aan?',
+	'TUTORIALHOWCREATESETTINGS' 	=> 'Maak uw <code style="color:blue;">settings.json</code> in de hoofdmap van uw themamap, met een structuur gebaseerd op dit voorbeeld met verschillende soorten opties',
+	'THEMECONFIGURATORNAME' 		=> 'Themaconfigurator',
+
+	'BACKUPCREATOR' 				=> 'Back-up maken',
+	'CREATEBACKUP' 					=> 'Back-up maken',
+	'SETTINGS' 						=> 'Instellingen',
+	'NOSETTINGSCREATED' 			=> 'Geen settings.json aangemaakt.',
+	'SHOWPASSWORD' 					=> 'Laat wachtwoord zien'
 
 ];
