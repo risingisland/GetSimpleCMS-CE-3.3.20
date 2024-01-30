@@ -14,6 +14,7 @@ What has changed in this version of the Community Edition?
 - Removed Uploadify & Jcrop
 - Updated Massive Admin
 - Other minor fixes and improvements
+- Massive Admin 5.x updated
 
 **Recent Updates:**
 
