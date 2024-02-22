@@ -1,9 +1,7 @@
-### GetSimple CMS 3.3.20 COMMUNITY EDITION 
+GetSimple CMS 3.3.20 Community Edition
+=========================================
+
 The official unofficial GS update repo. Helping to bridge the gap in PHP compatibility. 
-
-What has changed in this version of the Community Edition?
-
-🚀 **_Added support for php7.4-8.2_**
 
 
 **Whats New in this Update:**
@@ -12,11 +10,12 @@ What has changed in this version of the Community Edition?
 - Minor php8.x compatibility improvements 
 - Fontawesome added to core
 - Removed Uploadify & Jcrop
-- Updated Massive Admin
-- Other minor fixes and improvements
 - Massive Admin 5.x updated
+- Other minor fixes and improvements
 
 **Recent Updates:**
+
+🚀 Massive Admin 5 included by default (responsive admin + user manager + much much more...).
 
 🌐 11 default languages included (de, es, en, fr, it, ja, nl, pl, pt, ru, uk)
 
@@ -38,8 +37,10 @@ What has changed in this version of the Community Edition?
 
 ⭐ Other minor fixes and cleanup.
 
+
 **Previous Updates:**
 
+- Added support for php7.4-8.2
 - Fix deprecated Text-encoding HTML-ENTITIES for php8.2.
 - Hotfixes: form action reflection, add phar to blacklist, .htaccess
 - Fix bug in Components if none exist.
@@ -122,6 +123,38 @@ be held liable for any information loss, corruption or anything else that may
 happen to your site while it is using the our software. If you find a bug 
 or security hole, please contact someone in the forums at 
 http://get-simple.info/forum
+
+
+
+Libraries
+-----------------------------------
+
+_company logos in the icons are copyright of their respective owners_
+
+Ckeditor  
+http://ckeditor.com/
+
+marijnh/CodeMirror  
+http://codemirror.net/
+
+fancybox  
+https://github.com/fancyapps/fancyBox
+
+rgrove/lazyload  
+https://github.com/rgrove/lazyload
+
+enyo/dropzone  
+https://github.com/enyo/dropzone
+
+fontawesome  
+http://fontawesome.io/
+
+bigspotteddog/scrolltofixed  
+https://github.com/bigspotteddog/ScrollToFixed
+
+dropzonejs  
+http://www.dropzonejs.com/
+
 
 
 ______________________________________________
