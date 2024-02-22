@@ -55,19 +55,12 @@ The official unofficial GS update repo. Helping to bridge the gap in PHP compati
 - Further 8.x compatibility from Topic with fixes ([Forum Thread](http://get-simple.info/forums/showthread.php?tid=16548))
 
 
-```bash
-/// original readme below ///
-```
-GetSimple Content Management System
-=========================================
-
  DESCRIPTION:
 -----------------------------------
 
-GetSimple CMS is a flatfile CMS that works fast and efficient and has 
-the best UI around.
+GetSimple CMS CE is a flatfile CMS that works fast and efficient and has the best UI around.
 
-Official Website - http://get-simple.info/
+Official CE Website - https://getsimple-ce.ovh/
 
 GetSimple CMS was developed by Chris Cagle [ http://chriscagle.me ] and 
 is now passionately supported and developed by a loving community.
