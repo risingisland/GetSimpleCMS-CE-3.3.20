@@ -51,15 +51,24 @@ We're driven by a shared commitment to uphold the importance of GetSimple CMS pr
 ## Team :pushpin: ##
 The following individuals generously donate their time to further developing this "Community Edition" version, please consider supporting their efforts:
 
-### :computer: multi / multicolor :video_game: ###
+<table>
+<tr>
+<th>:computer: multi / multicolor :video_game:</th>
+<th>:computer: islander / risingisland :palm_tree:</th>
+</tr>
+<tr>
+<td>
 Location: Poland <br/>
 Hobbies: Gaming & Programing <br/>
 [![❤️ Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=TW6PXVCTM5A72)
-### :computer: islander / risingisland :palm_tree: ###
+</td>
+<td>
 Location: Spain <br/>
 Hobbies: Hiking & Design <br/>
 [![❤️ Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=C3FTNQ78HH8BE)
-
+</td>
+</tr>
+</table>
 
 ## Whats New? :pushpin: ##
 
