@@ -1,7 +1,28 @@
-GetSimple CMS 3.3.20 Community Edition
-=========================================
+# GetSimple CMS Community Edition
 
+[![CMS - GetSimpleCMS CE](https://img.shields.io/badge/CMS-GetSimpleCMS_CE-blue)](https://getsimple-ce.ovh/)
+![PHP - v7.4-8.x](https://img.shields.io/badge/PHP-v7.4--8.x-orange)
+![GitHub Release](https://img.shields.io/github/v/release/GetSimpleCMS-CE/GetSimpleCMS-CE?color=yellow)
+[![Documentation - Available](https://img.shields.io/badge/Documentation-Available-red)](http://get-simple.info/wiki/start)
+
+## What is GetSimple CMS CE?
+GetSimple is an XML based, stand-a-alone, fully independent and lite Content Management System. To go along with its best-in-class user interface, it is loaded with features that every website needs, but with nothing it doesn't. GetSimple is truly the simplest way to manage a small-business website.
+Now supporting php7.4-8.x.
+
+Official CE Website - https://getsimple-ce.ovh/
 The official unofficial GS update repo. Helping to bridge the gap in PHP compatibility. 
+
+## Features
+
+
+## History
+... and is now passionately supported and developed by a loving new team.
+Recognizing the lapse in development and support on the current official website, we've taken the initiative to breathe new life into the platform by providing the essential updates it deserves, ensuring the advancement of this vital project.
+We're driven by a shared commitment to uphold the importance of GetSimple CMS project and community. Leveraging our firsthand experience with GetSimple CMS, we understand its value as a solution.
+
+## Team
+The following individuals generously donate their time to further developing this "Community Edition" version, please consider supporting their efforts:
+
 
 
 **Whats New in this Update:**
@@ -117,6 +138,10 @@ happen to your site while it is using the our software. If you find a bug
 or security hole, please contact someone in the forums at 
 http://get-simple.info/forum
 
+
+## Credits
+Founder / Creator: Chris Cagle [ https://chriscagle.me ]
+Original Lead Developer: Shawn Alverson [ http://tablatronix.com/ ]
 
 
 Libraries
