@@ -1,4 +1,5 @@
-<p align="center">
+<div align="center">
+
 # GetSimple CMS Community Edition
 
 [![CMS - GetSimpleCMS CE](https://img.shields.io/badge/CMS-GetSimpleCMS_CE-blue)](https://getsimple-ce.ovh/)
@@ -7,7 +8,7 @@
 [![Documentation - Available](https://img.shields.io/badge/Documentation-Available-red)](http://get-simple.info/wiki/start)
 [![License](https://img.shields.io/badge/License-GPL--3.0-green)](#license)
 
-</p>
+</div>
 
 \
 \
