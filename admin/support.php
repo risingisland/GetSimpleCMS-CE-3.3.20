@@ -41,7 +41,7 @@ get_template('header', cl($SITENAME).' &raquo; '.i18n_r('SUPPORT') );
 			<h3><?php i18n('GETTING_STARTED');?></h3>
 			
 			<ul>
-				<li><a href="https://github.com/GetSimpleCMS-CE?tab=repositories" target="_blank">Github SVN</a></li>
+				<li><a href="https://github.com/GetSimpleCMS-CE/GetSimpleCMS-CE" target="_blank">Github SVN</a></li>
 				<li><a href="http://get-simple.info/docs/" target="_blank" ><?php i18n('SIDE_DOCUMENTATION'); ?></a></li>
 				<li><a href="http://get-simple.info/forum/" target="_blank" ><?php i18n('SUPPORT_FORUM'); ?></a></li>
 				<li><a href="https://getsimple-ce.ovh/" target="_blank" ><?php echo str_replace(['<em>', '</em>'], '', i18n_r('GET_PLUGINS_LINK')); ?></a></li>
