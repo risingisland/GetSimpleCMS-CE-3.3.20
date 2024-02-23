@@ -54,12 +54,12 @@ The following individuals generously donate their time to further developing thi
 ### :computer: multi / multicolor :video_game: ###
 Location: Poland <br/>
 Hobbies: Gaming & Programing <br/>
-[![❤️ Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/donate/?hosted_button_id=TW6PXVCTM5A72)
+[![:heart: Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/donate/?hosted_button_id=TW6PXVCTM5A72)
 
 ### :computer: islander / risingisland :palm_tree: ###
 Location: Spain <br/>
 Hobbies: Hiking & Design <br/>
-[![❤️ Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/donate/?hosted_button_id=C3FTNQ78HH8BE)
+[![:heart: Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/donate/?hosted_button_id=C3FTNQ78HH8BE)
 
 
 ## Whats New? :pushpin: ##
