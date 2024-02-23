@@ -10,9 +10,12 @@
 
 </div>
 
-\
-\
+
 <hr/>
+
+\
+\
+\
 
 ## What is GetSimple CMS CE? :pushpin:
 GetSimple is an XML based, stand-a-alone, fully independent and lite Content Management System. To go along with its best-in-class user interface, it is loaded with features that every website needs, but with nothing it doesn't. GetSimple is truly the simplest way to manage a small-business website.
