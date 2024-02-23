@@ -38,12 +38,13 @@ The total time in setting up a website took a total of 5 minutes, from starting 
 ### Easy Theme Customization ###
 We have how to documents that show you how to create a custom theme. Our goal was not to bloat our software with hundreds of little-used theme functions, but to offer more than enough to allow for a fully customized theme.
 
-### Easy Theme Customization ###
-We have how to documents that show you how to create a custom theme. Our goal was not to bloat our software with hundreds of little-used theme functions, but to offer more than enough to allow for a fully customized theme.
+### Plugins & Expandability ###
+Designed to be light and agile, the base install comes to you clutter free, without dozens of extras you dont need. But of course we do have an ever growing selection of extensions ready to use and easy to install. Everything that you or your client are looking for…
 
 
 ## History :pushpin:
-... and is now passionately supported and developed by a loving new team.
+GetSimple CMS was created in 2009 and primarily developed for the creation of smaller websites, it is also became suitable for medium to large websites thanks to the extendability of the platform via plug-ins and themes.
+Though by 2020, development had slowed considerably as the original team were no longer able to dedicate their time and resources to the project.
 Recognizing the lapse in development and support on the current official website, we've taken the initiative to breathe new life into the platform by providing the essential updates it deserves, ensuring the advancement of this vital project.
 We're driven by a shared commitment to uphold the importance of GetSimple CMS project and community. Leveraging our firsthand experience with GetSimple CMS, we understand its value as a solution.
 
@@ -59,10 +60,12 @@ The following individuals generously donate their time to further developing thi
     <td>
 	Location: Poland <br/>
 	Hobbies: Gaming & Programing <br/>
+	
 	</td>
     <td>
 	Location: Spain <br/>
 	Hobbies: Hiking & Design <br/>
+	
 	</td>
   </tr>
 </table>
