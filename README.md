@@ -2,6 +2,8 @@
 
 # GetSimple CMS Community Edition
 
+![image](https://github.com/GetSimpleCMS-CE/GetSimpleCMS-CE/assets/6113504/621eea2d-7db2-4115-8d33-89c941e45103)
+
 [![CMS - GetSimpleCMS CE](https://img.shields.io/badge/CMS-GetSimpleCMS_CE-blue)](https://getsimple-ce.ovh/)
 ![PHP - v7.4-8.x](https://img.shields.io/badge/PHP-v7.4--8.x-orange)
 ![GitHub Release](https://img.shields.io/github/v/release/GetSimpleCMS-CE/GetSimpleCMS-CE?color=yellow)
