@@ -1,4 +1,4 @@
-<div style="align:center">
+<p align="center">
 # GetSimple CMS Community Edition
 
 [![CMS - GetSimpleCMS CE](https://img.shields.io/badge/CMS-GetSimpleCMS_CE-blue)](https://getsimple-ce.ovh/)
@@ -7,7 +7,11 @@
 [![Documentation - Available](https://img.shields.io/badge/Documentation-Available-red)](http://get-simple.info/wiki/start)
 [![License](https://img.shields.io/badge/License-GPL--3.0-green)](#license)
 
-</div>
+</p>
+
+\
+\
+<hr/>
 
 ## What is GetSimple CMS CE? :pushpin:
 GetSimple is an XML based, stand-a-alone, fully independent and lite Content Management System. To go along with its best-in-class user interface, it is loaded with features that every website needs, but with nothing it doesn't. GetSimple is truly the simplest way to manage a small-business website.
@@ -18,16 +22,16 @@ The official unofficial GS update repo. Helping to bridge the gap in PHP compati
 
 ## Features :pushpin:
 
-**XML Based**
+### XML Based ###
 We don't use mySQL to store our information, but instead depend the simplicity of XML. By utilizing XML, we are able stay away from introducing an extra layer of slowness and complexity associated with connecting to a mySQL database. Because GetSimple was built specifically for the small-site market, we feel this is the absolutely best option for data storage.
 
-**Easy to Learn UI**
+### Easy to Learn UI ###
 The top priority when designing our user-interface was to make it the best in it's class. We had the luxury of trying and testing all the competing management systems before designing ours, so we took the best out of each one - then refined it.
 
-**Simple Installation**
+### Simple Installation ###
 The total time in setting up a website took a total of 5 minutes, from starting the FTP to finishing the setup procedure.
 
-**Simple Theme Customization**
+### Simple Theme Customization ###
 We have how to documents that show you how to create a custom theme. Our goal was not to bloat our software with hundreds of little-used theme functions, but to offer more than enough to allow for a fully customized theme.
 
 
@@ -36,46 +40,44 @@ We have how to documents that show you how to create a custom theme. Our goal wa
 Recognizing the lapse in development and support on the current official website, we've taken the initiative to breathe new life into the platform by providing the essential updates it deserves, ensuring the advancement of this vital project.
 We're driven by a shared commitment to uphold the importance of GetSimple CMS project and community. Leveraging our firsthand experience with GetSimple CMS, we understand its value as a solution.
 
-## Team :pushpin:
+## Team :pushpin: ##
 The following individuals generously donate their time to further developing this "Community Edition" version, please consider supporting their efforts:
 
+<table>
+  <tr>
+    <th>multi / multicolor :video_game:</th>
+    <th>islander / risingisland :palm_tree:</th>
+  </tr>
+  <tr>
+    <td>Content from cell 1</td>
+    <td>Content from cell 2</td>
+  </tr>
+</table>
 
+## Whats New in this Update: :pushpin: ##
 
-**Whats New in this Update:**
-
-⭐ Script updates:
 - Minor php8.x compatibility improvements 
 - Fontawesome added to core
 - Removed Uploadify & Jcrop
 - Massive Admin 5.x updated
 - Other minor fixes and improvements
 
-**Recent Updates:**
+### Recent Updates: ###
 
 🚀 Massive Admin 5 included by default (responsive admin + user manager + much much more...).
+🌐 11 default languages included (de, es, en, fr, it, ja, nl, pl, pt, ru, uk).
 
-🌐 11 default languages included (de, es, en, fr, it, ja, nl, pl, pt, ru, uk)
-
-⭐ New gsconfig option (set login page language)
-
-⭐ Massive Admin included by default (responsive admin + user manager + much much more...).
-
-⭐ New Admin themes option.
-
-⭐ ResponsiveCE default template (front-end starter theme).
-
-⭐ New ckEditor plugins (Codemirror, YouTube, FontAwesome, etc.).
-
-⭐ New Soport Page options (view errorlog & phpInfo).
-
-⭐ New gsconfig option (view page tree by Title or Menu order).
-
-⭐ New Copy Component code button.
-
-⭐ Other minor fixes and cleanup.
+- New gsconfig option (set login page language)
+- Massive Admin included by default (responsive admin + user manager + much much more...).
+- New Admin themes option.
+- ResponsiveCE default template (front-end starter theme).
+- New ckEditor plugins (Codemirror, YouTube, FontAwesome, etc.).
+- New Soport Page options (view errorlog & phpInfo).
+- New gsconfig option (view page tree by Title or Menu order).
+- New Copy Component code button.
 
 
-**Previous Updates:**
+### Previous Updates: ###
 
 - Added support for php7.4-8.2
 - Fix deprecated Text-encoding HTML-ENTITIES for php8.2.
