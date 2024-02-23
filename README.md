@@ -65,7 +65,7 @@ The following individuals generously donate their time to further developing thi
     <td>
 	Location: Spain <br/>
 	Hobbies: Hiking & Design <br/>
-	![❤️ - Donate](https://img.shields.io/badge/❤️-Donate-2ea44f)](https://www.paypal.com/donate/?hosted_button_id=C3FTNQ78HH8BE)
+	[![❤️ - Donate](https://img.shields.io/static/v1?label=❤️&message=Donate&color=2ea44f)](https://www.paypal.com/donate/?hosted_button_id=C3FTNQ78HH8BE)
 	</td>
   </tr>
 </table>
