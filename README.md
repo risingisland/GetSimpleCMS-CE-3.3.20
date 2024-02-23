@@ -44,8 +44,8 @@ Designed to be light and agile, the base install comes to you clutter free, with
 
 ## History :pushpin:
 GetSimple CMS was created in 2009 and primarily developed for the creation of smaller websites, it is also became suitable for medium to large websites thanks to the extendability of the platform via plug-ins and themes.
-Though by 2020, development had slowed considerably as the original team were no longer able to dedicate their time and resources to the project.
-Recognizing the lapse in development and support on the current official website, we've taken the initiative to breathe new life into the platform by providing the essential updates it deserves, ensuring the advancement of this vital project.
+Though by 2020, development had slowed considerably as the original team were no longer able to dedicate their time and resources to the project.<br/>
+Recognizing the lapse in development and support on the current official website, we've taken the initiative to breathe new life into the platform by providing the essential updates it deserves, ensuring the advancement of this vital project.<br/>
 We're driven by a shared commitment to uphold the importance of GetSimple CMS project and community. Leveraging our firsthand experience with GetSimple CMS, we understand its value as a solution.
 
 ## Team :pushpin: ##
@@ -60,12 +60,10 @@ The following individuals generously donate their time to further developing thi
     <td>
 	Location: Poland <br/>
 	Hobbies: Gaming & Programing <br/>
-	
 	</td>
     <td>
 	Location: Spain <br/>
 	Hobbies: Hiking & Design <br/>
-	
 	</td>
   </tr>
 </table>
