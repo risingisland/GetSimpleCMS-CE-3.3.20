@@ -60,12 +60,12 @@ The following individuals generously donate their time to further developing thi
     <td>
 	Location: Poland <br/>
 	Hobbies: Gaming & Programing <br/>
-	[![❤️ - Donate](https://img.shields.io/badge/❤️-Donate-2ea44f)](https://www.paypal.com/donate/?hosted_button_id=TW6PXVCTM5A72)
+	![❤️ - Donate](https://img.shields.io/badge/❤️-Donate-2ea44f)](https://www.paypal.com/donate/?hosted_button_id=TW6PXVCTM5A72)
 	</td>
     <td>
 	Location: Spain <br/>
 	Hobbies: Hiking & Design <br/>
-	[![❤️ - Donate](https://img.shields.io/badge/❤️-Donate-2ea44f)](https://www.paypal.com/donate/?hosted_button_id=C3FTNQ78HH8BE)
+	![❤️ - Donate](https://img.shields.io/badge/❤️-Donate-2ea44f)](https://www.paypal.com/donate/?hosted_button_id=C3FTNQ78HH8BE)
 	</td>
   </tr>
 </table>
