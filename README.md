@@ -57,12 +57,12 @@ The following individuals generously donate their time to further developing thi
   </tr>
   <tr>
     <td>
-	- Location: Poland
-	- Hobbies: Gaming & Programing
+	Location: Poland <br/>
+	Hobbies: Gaming & Programing <br/>
 	</td>
     <td>
-	- Location: Spain
-	- Hobbies: Hiking & Design
+	Location: Spain <br/>
+	Hobbies: Hiking & Design <br/>
 	</td>
   </tr>
 </table>
