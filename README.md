@@ -50,7 +50,7 @@ We're driven by a shared commitment to uphold the importance of GetSimple CMS pr
 
 ## Team :pushpin: ##
 The following individuals generously donate their time to further developing this "Community Edition" version, please consider supporting their efforts:
-
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=TW6PXVCTM5A72)
 <table>
   <tr>
     <th>:computer: multi / multicolor :video_game:</th>
