@@ -15,9 +15,7 @@
 
 <hr/>
 
-\
-\
-\
+
 
 ## What is GetSimple CMS CE? :pushpin:
 GetSimple is an XML based, stand-a-alone, fully independent and lite Content Management System. To go along with its best-in-class user interface, it is loaded with features that every website needs, but with nothing it doesn't. GetSimple is truly the simplest way to manage a small-business website.
@@ -37,7 +35,10 @@ The top priority when designing our user-interface was to make it the best in it
 ### Simple Installation ###
 The total time in setting up a website took a total of 5 minutes, from starting the FTP to finishing the setup procedure.
 
-### Simple Theme Customization ###
+### Easy Theme Customization ###
+We have how to documents that show you how to create a custom theme. Our goal was not to bloat our software with hundreds of little-used theme functions, but to offer more than enough to allow for a fully customized theme.
+
+### Easy Theme Customization ###
 We have how to documents that show you how to create a custom theme. Our goal was not to bloat our software with hundreds of little-used theme functions, but to offer more than enough to allow for a fully customized theme.
 
 
@@ -51,16 +52,22 @@ The following individuals generously donate their time to further developing thi
 
 <table>
   <tr>
-    <th>multi / multicolor :video_game:</th>
-    <th>islander / risingisland :palm_tree:</th>
+    <th>:computer: multi / multicolor :video_game:</th>
+    <th>:computer: islander / risingisland :palm_tree:</th>
   </tr>
   <tr>
-    <td>Content from cell 1</td>
-    <td>Content from cell 2</td>
+    <td>
+	Location: Poland
+	Hobbies: Gaming & Programing
+	</td>
+    <td>
+	Location: Spain
+	Hobbies: Hiking & Design
+	</td>
   </tr>
 </table>
 
-## Whats New in this Update: :pushpin: ##
+## Whats New? :pushpin: ##
 
 - Minor php8.x compatibility improvements 
 - Fontawesome added to core
@@ -71,6 +78,7 @@ The following individuals generously donate their time to further developing thi
 ### Recent Updates: ###
 
 🚀 Massive Admin 5 included by default (responsive admin + user manager + much much more...).
+
 🌐 11 default languages included (de, es, en, fr, it, ja, nl, pl, pt, ru, uk).
 
 - New gsconfig option (set login page language)
