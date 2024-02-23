@@ -1,3 +1,4 @@
+<div style="align:center">
 # GetSimple CMS Community Edition
 
 [![CMS - GetSimpleCMS CE](https://img.shields.io/badge/CMS-GetSimpleCMS_CE-blue)](https://getsimple-ce.ovh/)
@@ -6,22 +7,36 @@
 [![Documentation - Available](https://img.shields.io/badge/Documentation-Available-red)](http://get-simple.info/wiki/start)
 [![License](https://img.shields.io/badge/License-GPL--3.0-green)](#license)
 
-## What is GetSimple CMS CE?
+</div>
+
+## What is GetSimple CMS CE? :pushpin:
 GetSimple is an XML based, stand-a-alone, fully independent and lite Content Management System. To go along with its best-in-class user interface, it is loaded with features that every website needs, but with nothing it doesn't. GetSimple is truly the simplest way to manage a small-business website.
 Now supporting php7.4-8.x.
 
 Official CE Website - https://getsimple-ce.ovh/
 The official unofficial GS update repo. Helping to bridge the gap in PHP compatibility. 
 
-## Features
+## Features :pushpin:
+
+**XML Based**
+We don't use mySQL to store our information, but instead depend the simplicity of XML. By utilizing XML, we are able stay away from introducing an extra layer of slowness and complexity associated with connecting to a mySQL database. Because GetSimple was built specifically for the small-site market, we feel this is the absolutely best option for data storage.
+
+**Easy to Learn UI**
+The top priority when designing our user-interface was to make it the best in it's class. We had the luxury of trying and testing all the competing management systems before designing ours, so we took the best out of each one - then refined it.
+
+**Simple Installation**
+The total time in setting up a website took a total of 5 minutes, from starting the FTP to finishing the setup procedure.
+
+**Simple Theme Customization**
+We have how to documents that show you how to create a custom theme. Our goal was not to bloat our software with hundreds of little-used theme functions, but to offer more than enough to allow for a fully customized theme.
 
 
-## History
+## History :pushpin:
 ... and is now passionately supported and developed by a loving new team.
 Recognizing the lapse in development and support on the current official website, we've taken the initiative to breathe new life into the platform by providing the essential updates it deserves, ensuring the advancement of this vital project.
 We're driven by a shared commitment to uphold the importance of GetSimple CMS project and community. Leveraging our firsthand experience with GetSimple CMS, we understand its value as a solution.
 
-## Team
+## Team :pushpin:
 The following individuals generously donate their time to further developing this "Community Edition" version, please consider supporting their efforts:
 
 
@@ -77,34 +92,21 @@ The following individuals generously donate their time to further developing thi
 - Further 8.x compatibility from Topic with fixes ([Forum Thread](http://get-simple.info/forums/showthread.php?tid=16548))
 
 
- DESCRIPTION:
------------------------------------
-
-GetSimple CMS CE is a flatfile CMS that works fast and efficient and has the best UI around.
-
-Official CE Website - https://getsimple-ce.ovh/
-
-GetSimple CMS was developed by Chris Cagle [ http://chriscagle.me ] and 
-is now passionately supported and developed by a loving community.
-
-
- LICENSE:
------------------------------------
+## LICENSE: :pushpin:
 
 This software package is licensed under the GNU GENERAL PUBLIC LICENSE v3. 
-LICENSE.txt is located within this download's zip file
+LICENSE.txt is located within this download's zip file.
 
-It would be great if you would link back to get-simple.info if you use it.
+It would be great if you would link back to https://getsimple-ce.ovh/ if you use it.
 
 
-REQUIREMENTS: 
------------------------------------
+## REQUIREMENTS: :pushpin:
 
 http://get-simple.info/docs/requirements
 
 ### Build Requirements ###
 
-PHP 7.4+
+Minimum of php7.4 recommended.
 
 ### Module Requirements ###
 
@@ -118,20 +120,17 @@ Javascript Enabled
 *Apache ( recommended for out of the box security using .htaccess )
 
 
-INSTALLATION:
------------------------------------
+## INSTALLATION: :pushpin:
 
 Please see: http://get-simple.info/docs/installation
 
 
-UPGRADING
------------------------------------
+## UPGRADING :pushpin:
 
 Please see: http://get-simple.info/docs/upgrading
 
 
-DISCLAIMER:
------------------------------------
+## DISCLAIMER: :pushpin:
 
 While GetSimple strives to be a secure and stable application, we simply cannot 
 be held liable for any information loss, corruption or anything else that may 
@@ -140,13 +139,13 @@ or security hole, please contact someone in the forums at
 http://get-simple.info/forum
 
 
-## Credits
+## Credits :pushpin:
+
 Founder / Creator: Chris Cagle [ https://chriscagle.me ]
 Original Lead Developer: Shawn Alverson [ http://tablatronix.com/ ]
 
 
-Libraries
------------------------------------
+## Libraries :pushpin:
 
 _company logos in the icons are copyright of their respective owners_
 
@@ -174,7 +173,3 @@ https://github.com/bigspotteddog/ScrollToFixed
 dropzonejs  
 http://www.dropzonejs.com/
 
-
-
-______________________________________________
-GetSimple CMS - http://get-simple.info/
