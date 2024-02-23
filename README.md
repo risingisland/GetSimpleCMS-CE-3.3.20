@@ -4,6 +4,7 @@
 ![PHP - v7.4-8.x](https://img.shields.io/badge/PHP-v7.4--8.x-orange)
 ![GitHub Release](https://img.shields.io/github/v/release/GetSimpleCMS-CE/GetSimpleCMS-CE?color=yellow)
 [![Documentation - Available](https://img.shields.io/badge/Documentation-Available-red)](http://get-simple.info/wiki/start)
+[![License](https://img.shields.io/badge/License-GPL--3.0-green)](#license)
 
 ## What is GetSimple CMS CE?
 GetSimple is an XML based, stand-a-alone, fully independent and lite Content Management System. To go along with its best-in-class user interface, it is loaded with features that every website needs, but with nothing it doesn't. GetSimple is truly the simplest way to manage a small-business website.
