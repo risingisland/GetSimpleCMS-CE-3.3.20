@@ -6,6 +6,7 @@
 
 [![CMS - GetSimpleCMS CE](https://img.shields.io/badge/CMS-GetSimpleCMS_CE-blue)](https://getsimple-ce.ovh/)
 ![PHP - v7.4-8.x](https://img.shields.io/badge/PHP-v7.4--8.x-orange)
+![DataBase](https://img.shields.io/badge/FlatFile-purple)
 ![GitHub Release](https://img.shields.io/github/v/release/GetSimpleCMS-CE/GetSimpleCMS-CE?color=yellow)
 [![Documentation - Available](https://img.shields.io/badge/Documentation-Available-red)](http://get-simple.info/wiki/start)
 [![License](https://img.shields.io/badge/License-GPL--3.0-green)](#license)
@@ -68,7 +69,9 @@ Hobbies: Hiking & Design <br/>
 - Fontawesome added to core
 - Removed Uploadify & Jcrop
 - Massive Admin 5.x updated
-- Other minor fixes and improvements
+- Support page updated
+- Support>ErrorLog updated
+- Other minor fixes
 
 ### Recent Updates: ###
 
