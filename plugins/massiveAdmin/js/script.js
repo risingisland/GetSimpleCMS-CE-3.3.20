@@ -85,32 +85,54 @@ if (document.querySelector('#pages') !== null) {
 	});
 }
 
-// 'Adds collapse/expand-functionality to page-list script by andy-man / plugin created by Carlos / added animation (good color for light-theme) by multicolor ',
+// 'Adds collapse/expand-functionality,
 
-$('#editpages tr').attr('rel', 0).addClass('l-0');
-$('.pagetitle span').not('.showstatus').each(function (i, e) {
-	$tr = $(this).parent().parent();
-	var level = $tr.find('.pagetitle span').not('.showstatus').size();
-	$tr.attr('rel', level);
-	$tr.attr('class', 'hidden l-' + level);
+ document.querySelectorAll('#editpages tr').forEach(function(row) {
+    row.setAttribute('rel', 0);
+    row.classList.add('l-0');
 });
 
-$('#editpages tr.hidden').each(function (i, e) {
-	if (parseInt($(this).prev().attr('rel')) < parseInt($(this).attr('rel'))) $(this).prev().find('.pagetitle').prepend('<div class="switch"></div>');
+ document.querySelectorAll('.pagetitle span:not(.showstatus)').forEach(function(span) {
+    var tr = span.parentElement.parentElement;
+    var level = tr.querySelectorAll('.pagetitle span:not(.showstatus)').length;
+    tr.setAttribute('rel', level);
+    tr.setAttribute('class', 'hidden l-' + level);
 });
 
-$('.pagetitle').on('click', '.switch', function () {
-
-	$tr = $(this).parent().parent();
-	var lvl = parseInt($tr.attr('rel'));
-
-	if ($(this).hasClass('on'))
-		$tr.nextUntil('.l-' + lvl).addClass('hidden').find('.switch.on').removeClass('on');
-	else
-		$tr.nextUntil('.l-' + lvl, '.l-' + (lvl + 1)).removeClass('hidden').addClass('fadeIn');
-
-	$(this).toggleClass('on');
+ document.querySelectorAll('#editpages tr.hidden').forEach(function(row) {
+    var prevRel = parseInt(row.previousElementSibling.getAttribute('rel'));
+    var currentRel = parseInt(row.getAttribute('rel'));
+    if (prevRel < currentRel) {
+        row.previousElementSibling.querySelector('.pagetitle').insertAdjacentHTML('afterbegin', '<div class="switch"></div>');
+    }
 });
+
+ document.querySelectorAll('.pagetitle').forEach(function(pagetitle) {
+    pagetitle.addEventListener('click', function() {
+        var tr = this.parentElement;
+        var lvl = parseInt(tr.getAttribute('rel'));
+        var switchDiv = this.querySelector('.switch');
+        if (switchDiv.classList.contains('on')) {
+            Array.from(tr.nextElementSiblings).forEach(function(next) {
+                if (next.classList.contains('l-' + lvl)) {
+                    next.classList.add('hidden');
+                    Array.from(next.querySelectorAll('.switch.on')).forEach(function(switchOn) {
+                        switchOn.classList.remove('on');
+                    });
+                }
+            });
+        } else {
+            Array.from(tr.nextElementSiblings).forEach(function(next) {
+                if (next.classList.contains('l-' + (lvl + 1))) {
+                    next.classList.remove('hidden');
+                    next.classList.add('fadeIn');
+                }
+            });
+        }
+        switchDiv.classList.toggle('on');
+    });
+});
+
 
 document.querySelectorAll('.switch').forEach(sx => {
 	sx.insertAdjacentHTML('afterbegin', `
