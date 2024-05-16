@@ -118,14 +118,14 @@ get_template('header', cl($SITENAME).' &raquo; '.i18n_r('PLUGINS_MANAGEMENT'));
 	</div>
 	
 	<script>
-		// Function to hide <td> elements with class "status" in rows containing any of the specified words
+		// Function to hide <a> elements with class "cancel" in rows containing any of the specified words
 		function hideStatusCellsContainingWords(words) {
 			var rows = document.querySelectorAll('tr');
 			
 			rows.forEach(function(row) {
 				for (var i = 0; i < words.length; i++) {
 					if (row.innerHTML.indexOf(words[i]) !== -1) {
-						var statusCell = row.querySelector('td.status');
+						var statusCell = row.querySelector('a.cancel');
 						if (statusCell) {
 							statusCell.style.display = 'none';
 						}
