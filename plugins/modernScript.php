@@ -50,7 +50,7 @@ function modernHeader(){
 	}
 
 	if (@$jqueryold == "true") {
-		echo '<script src="' . $SITEURL . 'admin/template/js/jquery/jquery-1.8.3.js"></script>';
+		echo '<script src="' . $SITEURL . 'admin/template/js/jquery/jquery-1.8.3.min.js"></script>';
 	}
 
 	if (@$jquery == "true") {
