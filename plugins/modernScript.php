@@ -34,6 +34,7 @@ function modernHeader(){
 		$w3js = $fileData['w3js'];
 		$alpine = $fileData['alpine'];
 		$jquery = $fileData['jquery'];
+		$jqueryui = $fileData['jqueryui'];
 		$jqueryold = $fileData['jqueryold'];
 	};
 
@@ -56,6 +57,10 @@ function modernHeader(){
 	if (@$jquery == "true") {
 		echo '<script src="' . $SITEURL . 'admin/template/js/jquery/jquery-3.7.1.min.js"></script>';
 	}
+
+	if (@$jqueryui == "true") {
+		echo '<script src="' . $SITEURL . 'admin/template/js/jquery/jquery-ui.min.js"></script>';
+	}
 }
 
 function modernScript(){
@@ -68,6 +73,7 @@ function modernScript(){
 		$alpine = $fileData['alpine'];
 		$jquery = $fileData['jquery'];
 		$jqueryold = $fileData['jqueryold'];
+		$jqueryui = $fileData['jqueryui'];
 	};
 
 	echo '
@@ -102,6 +108,12 @@ function modernScript(){
 				<label style="display:">jQuery v3.7.1 (<a href="https://jquery.com/" target="_blank">'.i18n_r("modernScript/lang_Documentation").'</a>) <span class="note">'.i18n_r("modernScript/lang_Jquery2_Note").'</span></label>
 				<input type="checkbox" name="jquery" value="true" ' . (@$jquery == "true" ? 'checked' : '') . '></label>
 			</div>
+
+			<div style="display:flex;align-items:center; justify-content:space-between;border:solid 1px #ddd;background:#fafafa;padding:10px;box-sizing:border-box;margin:5px 0">
+				<label style="display:">jQuery UI (<a href="https://jqueryui.com/" target="_blank">' . i18n_r("modernScript/lang_Documentation") . '</a>) <span class="note">' . i18n_r("modernScript/lang_Jquery2_Note") . '</span></label>
+				<input type="checkbox" name="jqueryui" value="true" ' . (@$jqueryui == "true" ? 'checked' : '') . '></label>
+			</div>
+		</div>
 		 
 			<br>
 		</div>
@@ -144,6 +156,7 @@ function modernScript(){
 		$data['alpine'] = $_POST['alpine'];
 		$data['jquery'] = $_POST['jquery'];
 		$data['jqueryold'] = $_POST['jqueryold'];
+		$data['jqueryui'] = $_POST['jqueryui'];
 
 		$finalData = json_encode($data);
 
