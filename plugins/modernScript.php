@@ -30,8 +30,8 @@ function modernHeader(){
 		$file = GSDATAOTHERPATH . 'modernScript.json';
 		$fileData = json_decode(file_get_contents($file), true);
 
-		$w3css = $fileData['w3css'];
 		$w3js = $fileData['w3js'];
+		$w3css = $fileData['w3css'];
 		$alpine = $fileData['alpine'];
 		$jquery = $fileData['jquery'];
 		$jqueryui = $fileData['jqueryui'];
@@ -68,12 +68,12 @@ function modernScript(){
 		$file = GSDATAOTHERPATH . 'modernScript.json';
 		$fileData = json_decode(file_get_contents($file), true);
 
-		$w3css = $fileData['w3css'];
 		$w3js = $fileData['w3js'];
+		$w3css = $fileData['w3css'];
 		$alpine = $fileData['alpine'];
 		$jquery = $fileData['jquery'];
-		$jqueryold = $fileData['jqueryold'];
 		$jqueryui = $fileData['jqueryui'];
+		$jqueryold = $fileData['jqueryold'];
 	};
 
 	echo '
@@ -113,7 +113,6 @@ function modernScript(){
 				<label style="display:">jQuery UI (<a href="https://jqueryui.com/" target="_blank">' . i18n_r("modernScript/lang_Documentation") . '</a>) <span class="note">' . i18n_r("modernScript/lang_Jquery2_Note") . '</span></label>
 				<input type="checkbox" name="jqueryui" value="true" ' . (@$jqueryui == "true" ? 'checked' : '') . '></label>
 			</div>
-		</div>
 		 
 			<br>
 		</div>
@@ -143,7 +142,7 @@ function modernScript(){
 
 	echo "
 	<style>.kofitext,.kofi-button{text-decoration:none !important}</style>
-	<div style='margin:20px 0;width:100%;'>
+	<div style='margin:20px 0;width:100%;' class='kofi'>
 		<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
 		<script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'I3I2RHQZS');kofiwidget2.draw();</script>
 	</div> ";
@@ -151,12 +150,12 @@ function modernScript(){
 	if (isset($_POST['saveModernScript'])) {
 		$data = [];
 
-		$data['w3css'] = $_POST['w3css'];
 		$data['w3js'] = $_POST['w3js'];
+		$data['w3css'] = $_POST['w3css'];
 		$data['alpine'] = $_POST['alpine'];
 		$data['jquery'] = $_POST['jquery'];
-		$data['jqueryold'] = $_POST['jqueryold'];
 		$data['jqueryui'] = $_POST['jqueryui'];
+		$data['jqueryold'] = $_POST['jqueryold'];
 
 		$finalData = json_encode($data);
 
