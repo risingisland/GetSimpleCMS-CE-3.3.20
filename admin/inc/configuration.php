@@ -10,7 +10,7 @@ $site_full_name     = 'GetSimple';
 $site_version_no    = '3.3.20';
 $name_url_clean     = lowercase(str_replace(' ','-',$site_full_name));
 $ver_no_clean       = str_replace('.','',$site_version_no);
-$site_link_back_url = 'http://get-simple.info/';
+$site_link_back_url = 'https://getsimple-ce.ovh/';
 
 // cookie config
 $cookie_name        = lowercase($name_url_clean) .'_cookie_'. $ver_no_clean; // non-hashed name of cookie
