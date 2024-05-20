@@ -6,7 +6,7 @@
  * @subpackage Config
  */
 
-$site_full_name     = 'GetSimple';
+$site_full_name     = 'GetSimple CE';
 $site_version_no    = '3.3.20';
 $name_url_clean     = lowercase(str_replace(' ','-',$site_full_name));
 $ver_no_clean       = str_replace('.','',$site_version_no);
