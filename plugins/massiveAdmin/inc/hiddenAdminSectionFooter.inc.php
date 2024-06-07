@@ -1,8 +1,10 @@
 <?php
 global $USR;
 
+$clean_login = preg_replace('/[^a-zA-Z0-9\s]/', '', $USR);
+
 $massiveHiddenSection = GSDATAOTHERPATH . '/massiveHiddenSection/';
-$filejson = $USR . '.json';
+$filejson = $clean_login . '.json';
 $finaljson = $massiveHiddenSection . $filejson;
 
 if (!file_exists($massiveHiddenSection)) {
@@ -16,7 +18,8 @@ $data = json_decode($datee);
 ?>
 
 <script>
-    document.body.setAttribute('data-login', '<?php echo $_COOKIE['GS_ADMIN_USERNAME']; ?>');
+
+    document.body.setAttribute('data-login', '<?php echo $clean_login; ?>');
 
     if (document.querySelector("#nav_pages") !== null) {
         if ("<?php if (isset($data->hidepages)) {
@@ -95,6 +98,19 @@ $data = json_decode($datee);
                     echo $data->hidesettings;
                 }; ?>" == "hide") {
             document.querySelector('a[href="settings.php#profile"]').remove()
+        };
+    };
+
+    if (document.querySelector(`body#settings`) !== null) {
+        if ("<?php if (isset($data->hidegssettings)) {
+                    echo $data->hidegssettings;
+                }; ?>" == "hide") {
+            document.querySelector('body#settings .main h3').remove()
+            document.querySelector('body#settings .main .leftsec').remove()
+            document.querySelector('body#settings .main .leftsec').remove()
+            document.querySelector('body#settings .main .rightsec').remove()
+            document.querySelector('body#settings .main .inline').remove()
+          
         };
     };
 </script>

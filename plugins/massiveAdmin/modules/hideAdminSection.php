@@ -20,7 +20,7 @@ global $SITEURL;; ?>
 			<br>
 			<?php echo i18n_r("massiveAdmin/USERNAMECREATE"); ?>
 			<br>
-			<input type="text" name="createuserhidden">
+			<input type="text" name="createuserhidden" oninput="toLowercase(this)">
 			<br><br>
 			<?php echo i18n_r('massiveAdmin/PASSWORDCREATE'); ?>
 			<br>
@@ -51,6 +51,11 @@ global $SITEURL;; ?>
 </div>
 
 <script>
+
+function toLowercase(input) {
+            input.value = input.value.toLowerCase();
+        }
+
 	document.querySelector('.hidecontent3').classList.add('hide');
 
 	document.querySelector('#hidetitle3').addEventListener('click', () => {
@@ -113,7 +118,10 @@ if (file_exists($finaljson)) {
 		<form method="POST" data-user="<?php echo pathinfo($us)['filename']; ?>" style="width:100%;height:auto; margin-top:20px;" class="hideadminsectionform">
 
 			<div style="width:100%;padding:5px;border:solid 1px #ddd;background:var(--main-color);color:#fff;grid-column: 1/3;font-size:1.2rem;height:auto;padding:5px;">
-				<p>User: <?php echo pathinfo($us)['filename']; ?></p>
+				<p>User: <?php echo 
+				$usxml = simplexml_load_file($us);
+				echo $usxml->USR;
+				?></p>
 			</div>
 
 			<input type="hidden" name="user" value="<?php echo pathinfo($us)['filename']; ?>">
@@ -166,6 +174,12 @@ if (file_exists($finaljson)) {
 				<option value="hide"><?php echo i18n_r('massiveAdmin/HIDE'); ?></option>
 			</select>
 
+			<p> <?php echo i18n_r('massiveAdmin/HIDEGSSETTINGS'); ?></p>
+			<select name="hidegssettings">
+				<option value="show"><?php echo i18n_r('massiveAdmin/SHOW'); ?></option>
+				<option value="hide"><?php echo i18n_r('massiveAdmin/HIDE'); ?></option>
+			</select>
+
 			<br>
 			<br>
 			
@@ -184,6 +198,7 @@ if (file_exists($finaljson)) {
 			document.querySelector('form[data-user="<?php echo pathinfo($us)['filename']; ?>"] select[name="hidesupport"]').value = '<?php echo $data->hidesupport ?>';
 			document.querySelector('form[data-user="<?php echo pathinfo($us)['filename']; ?>"] select[name="hidesettings"]').value = '<?php echo $data->hidesettings ?>';
 			document.querySelector('form[data-user="<?php echo pathinfo($us)['filename']; ?>"] select[name="hidei18n"]').value = '<?php echo $data->hidei18n ?>';
+			document.querySelector('form[data-user="<?php echo pathinfo($us)['filename']; ?>"] select[name="hidegssettings"]').value = '<?php echo $data->hidegssettings ?>';
 		</script>
 
 		<?php endif;?>
